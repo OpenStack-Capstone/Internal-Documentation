@@ -1,6 +1,33 @@
 strict digraph JavaPERT {
-	   start [peripheries=0];
-	   res-http [label="Research & choose http lib"];
-	   res-json [label="Research & choose json lib"];
-	   def-basic-iface [label="Define basic interface"];
+	   start [peripheries=0, label=""];
+	   res-http			[label="Research & Choose HTTP Library"];
+	   res-json 		[label="Research & Choose JSON Library"];
+	   def-basic-iface 	[label="Define Basic Interface"];
+	   def-async-iface 	[label="Define Asynchronous Interface"];
+	   init-docs 		[label="Initial Usage Documentation"];
+	   async-docs 		[label="Document Asynchronous Aspects"];
+	   impl-block-http 	[label="Implement Blocking HTTP Backend"];
+	   impl-block-mem 	[label="Implement Blocking Memory Backend"];
+	   impl-async-http 	[label="Implement Asynchronous HTTP Backend"];		
+	   impl-async-mem 	[label="Implement Asynchronous Memory Backend"];
+	   blocking-func 	[label="Implement Blocking Functional Test"]
+	   async-func 		[label="Implement Asynchronous Functional Test"]
+
+	   start -> res-http;
+	   start -> res-json;
+	   start -> def-basic-iface;
+
+	   res-http -> impl-block-http;
+	   res-json -> impl-block-http;
+	   def-basic-iface -> init-docs;
+	   def-basic-iface -> impl-block-mem;
+	   def-basic-iface -> def-async-iface;
+	   impl-block-mem -> impl-block-http;
+	   def-async-iface -> impl-async-mem;
+	   def-async-iface -> async-docs;
+	   init-docs -> async-docs;
+	   impl-async-memory -> impl-async-http;
+	   impl-block-http -> blocking-func;
+	   impl-async-http -> async-func
+	   impl-block-http -> impl-async-http;
 }
