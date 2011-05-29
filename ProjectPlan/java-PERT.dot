@@ -1,0 +1,6 @@
+strict digraph JavaPERT {
+	   start [peripheries=0];
+	   res-http [label="Research & choose http lib"];
+	   res-json [label="Research & choose json lib"];
+	   def-basic-iface [label="Define basic interface"];
+}
