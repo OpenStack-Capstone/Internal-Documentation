@@ -1,35 +1,36 @@
 strict digraph JavaPERT {
-	   size="4!,3!";
-	   start [peripheries=0, label=""];
-	   res_http			[label="Research & Choose\nHTTP Library"];
-	   res_json 		[label="Research & Choose\nJSON Library"];
-	   def_basic_iface 	[label="Define\nBasic Interface"];
-	   def_async_iface 	[label="Define\nAsynchronous Interface"];
-	   init_docs 		[label="Document\nBasic Usage"];
-	   async_docs 		[label="Document\nAsynchronous Usage"];
-	   impl_block_http 	[label="Implement Blocking\nHTTP Backend"];
-	   impl_block_mem 	[label="Implement Blocking\nMemory Backend"];
-	   impl_async_http 	[label="Implement Asynchronous\nHTTP Backend"];		
-	   impl_async_mem 	[label="Implement Asynchronous\nMemory Backend"];
-	   blocking_func 	[label="Implement Blocking\nFunctional Test"]
-	   async_func 		[label="Implement Asynchronous\nFunctional Test"]
+     size="4!,3!";
+	 s1                [label="", size=".1", peripheries="0"];
+     start             [color="black", style="filled", shape="circle", height=".5", label=""];
+     res_http          [label="Research & Choose\nHTTP Library\n10 hrs"];
+     res_json          [label="Research & Choose\nJSON Library\n10 hrs"];
+     def_basic_iface   [label="Define\nBasic Interface\n2 hrs"];
+     def_async_iface   [label="Define\nAsynchronous Interface\n4 hrs"];
+     init_docs         [label="Document\nBasic Usage\n6 hrs"];
+     async_docs        [label="Document\nAsynchronous Usage\n4 hrs"];
+     impl_block_http   [label="Implement Blocking\nHTTP Backend\n3 hrs"];
+     impl_block_mem    [label="Implement Blocking\nMemory Backend\n10 hrs"];
+     impl_async_http   [label="Implement Asynchronous\nHTTP Backend\n3 hrs"];    
+     impl_async_mem    [label="Implement Asynchronous\nMemory Backend\n8 hrs"];
+     blocking_func     [label="Implement Blocking\nFunctional Test\n6 hrs"]
+     async_func        [label="Implement Asynchronous\nFunctional Test\n2 hrs"]
 
-	   start -> res_http;
-	   start -> res_json;
-	   start -> def_basic_iface;
-
-	   res_http -> impl_block_http;
-	   res_json -> impl_block_http;
-	   def_basic_iface -> init_docs;
-	   def_basic_iface -> impl_block_mem;
-	   def_basic_iface -> def_async_iface;
-	   impl_block_mem -> impl_block_http;
-	   impl_block_mem -> impl_async_http;
-	   def_async_iface -> impl_async_mem;
-	   def_async_iface -> async_docs;
-	   init_docs -> async_docs;
-	   impl_async_mem -> impl_async_http;
-	   impl_block_http -> blocking_func;
-	   impl_async_http -> async_func
-	   impl_block_http -> impl_async_http;
+     s1               ->  start;
+     start            ->  res_http;
+     start            ->  res_json;
+     start            ->  def_basic_iface;
+     res_http         ->  impl_block_http;
+     res_json         ->  impl_block_http;
+     def_basic_iface  ->  init_docs;
+     def_basic_iface  ->  impl_block_mem;
+     def_basic_iface  ->  def_async_iface;
+     impl_block_mem   ->  impl_block_http;
+     impl_block_mem   ->  impl_async_http;
+     def_async_iface  ->  impl_async_mem;
+     def_async_iface  ->  async_docs;
+     init_docs        ->  async_docs;
+     impl_async_mem   ->  impl_async_http;
+     impl_block_http  ->  blocking_func;
+     impl_async_http  ->  async_func
+     impl_block_http  ->  impl_async_http;
 }

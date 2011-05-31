@@ -5,6 +5,5 @@ java-pert:
 	dot -Tpdf -Grankdir="LR" -o java-pert.pdf Java-PERT.dot
 
 c-pert:
-	echo derp
 	#dot -Tpdf -o c-pert.pdf C-PERT.dot
 
