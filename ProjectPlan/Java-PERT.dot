@@ -1,3 +1,10 @@
+/*
+ * git training
+ * javadoc training
+ * maven training
+*/
+
+
 strict digraph JavaPERT {
      size="4!,3!";
 	 s1                [label="", size=".1", peripheries="0"];
@@ -25,7 +32,7 @@ strict digraph JavaPERT {
      def_basic_iface  ->  impl_block_mem;
      def_basic_iface  ->  def_async_iface;
      impl_block_mem   ->  impl_block_http;
-     impl_block_mem   ->  impl_async_http;
+     impl_block_mem   ->  impl_async_mem;
      def_async_iface  ->  impl_async_mem;
      def_async_iface  ->  async_docs;
      init_docs        ->  async_docs;
