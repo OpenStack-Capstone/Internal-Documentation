@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.0</version>
+  <task-change-set user="Erik Swanson" date="2011-06-08T22:15:13.411Z" timestamp="2011-06-08T22:15:13.411Z">
+    <change idref="t-1" attribute="criticalPathProperties" type="dict" from="{
+    color =     {
+        b = &quot;0.5&quot;;
+        g = &quot;0.5&quot;;
+        r = 1;
+    };
+    enabled = 0;
+    root = &quot;-1&quot;;
+}" to="{
+    color =     {
+        b = &quot;0.5&quot;;
+        g = &quot;0.5&quot;;
+        r = 1;
+    };
+    enabled = 1;
+    root = &quot;-1&quot;;
+}" resolved="yes"/>
+    <change idref="t4" to="t-1" to-position="1" resolved="yes">
+      <change idref="t4" attribute="internalPrerequisitesString" type="string" to="1FS"/>
+      <change idref="t4" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t4" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t4" attribute="title" type="string" to="Maven"/>
+    </change>
+    <change idref="t9" to="t-1" to-position="2" resolved="yes">
+      <change idref="t9" attribute="internalPrerequisitesString" type="string" to="8FS"/>
+      <change idref="t9" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t9" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t9" attribute="title" type="string" to="Jenkins Integration"/>
+    </change>
+    <change idref="t11" to="t-1" to-position="3" resolved="yes">
+      <change idref="t11" attribute="internalPrerequisitesString" type="string" to="1FS"/>
+      <change idref="t11" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t11" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t11" attribute="title" type="string" to="Documentation"/>
+    </change>
+    <change idref="t19" to="t-1" to-position="4" resolved="yes">
+      <change idref="t19" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t19" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t19" attribute="title" type="string" to="Research and Design"/>
+    </change>
+    <change idref="t39" to="t-1" to-position="5" resolved="yes">
+      <change idref="t39" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t39" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t39" attribute="title" type="string" to="Implementation"/>
+    </change>
+    <change idref="t1" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t1" attribute="title" type="string" from="Task 1" to="Code Style Documentation" resolved="yes"/>
+    <change idref="t1" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t1" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t1" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t1" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t1" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t22" to="t1" to-position="0" resolved="yes">
+      <change idref="t22" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t22" attribute="internalEffortDone" type="real" from="0" to="3600"/>
+      <change idref="t22" attribute="title" type="string" to="Choose coding style"/>
+    </change>
+    <change idref="t3" to="t1" to-position="1" resolved="yes">
+      <change idref="t3" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t3" attribute="internalPrerequisitesString" type="string" to="22FS"/>
+      <change idref="t3" attribute="title" type="string" to="Document coding style"/>
+    </change>
+    <change idref="t7" to="t4" to-position="0" resolved="yes">
+      <change idref="t7" attribute="effort" type="real" from="28800" to="18000"/>
+      <change idref="t7" attribute="internalEffortDone" type="real" from="0" to="7200"/>
+      <change idref="t7" attribute="title" type="string" to="Train domain expert"/>
+    </change>
+    <change idref="t8" to="t4" to-position="1" resolved="yes">
+      <change idref="t8" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t8" attribute="internalPrerequisitesString" type="string" to="7FS"/>
+      <change idref="t8" attribute="title" type="string" to="Verify skeleton follows good practices"/>
+    </change>
+    <change idref="t10" to="t9" to-position="0" resolved="yes">
+      <change idref="t10" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t10" attribute="title" type="string" to="Contact Eday and arrange Jenkins building of skeleton"/>
+    </change>
+    <change idref="t14" to="t11" to-position="0" resolved="yes">
+      <change idref="t14" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t14" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t14" attribute="title" type="string" to="Code Documentation"/>
+    </change>
+    <change idref="t13" to="t11" to-position="1" resolved="yes">
+      <change idref="t13" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t13" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t13" attribute="title" type="string" to="User Documentation"/>
+    </change>
+    <change idref="t15" to="t13" to-position="0" resolved="yes">
+      <change idref="t15" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t15" attribute="title" type="string" to="Train Sphinx domain expert"/>
+    </change>
+    <change idref="t16" to="t13" to-position="1" resolved="yes">
+      <change idref="t16" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t16" attribute="title" type="string" to="Contact Sponsor and determine how user documentation will be delievered"/>
+    </change>
+    <change idref="t17" to="t13" to-position="2" resolved="yes">
+      <change idref="t17" attribute="internalPrerequisitesString" type="string" to="15FS"/>
+      <change idref="t17" attribute="startConstraintDate" type="date" to="2001-01-01T21:15:00.000Z"/>
+      <change idref="t17" attribute="title" type="string" to="Write narrative user documentation"/>
+    </change>
+    <change idref="t12" to="t14" to-position="0" resolved="yes">
+      <change idref="t12" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t12" attribute="title" type="string" to="Train Javadoc domain expert"/>
+    </change>
+    <change idref="t18" to="t14" to-position="1" resolved="yes">
+      <change idref="t18" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t18" attribute="internalPrerequisitesString" type="string" to="12FS"/>
+      <change idref="t18" attribute="title" type="string" to="Ongoing API documentation of all classes, methods."/>
+    </change>
+    <change idref="t20" to="t19" to-position="0" resolved="yes">
+      <change idref="t20" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t20" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t20" attribute="title" type="string" to="Async Model"/>
+    </change>
+    <change idref="t21" to="t19" to-position="1" resolved="yes">
+      <change idref="t21" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t21" attribute="startConstraintDate" type="date" to="2001-01-01T16:00:00.000Z"/>
+      <change idref="t21" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t21" attribute="title" type="string" to="Server Communication"/>
+    </change>
+    <change idref="t36" to="t19" to-position="2" resolved="yes">
+      <change idref="t36" attribute="title" type="string" to="Design interface of blocking API"/>
+    </change>
+    <change idref="t37" to="t19" to-position="3" resolved="yes">
+      <change idref="t37" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t37" attribute="internalPrerequisitesString" type="string" to="28FS, 36FS"/>
+      <change idref="t37" attribute="title" type="string" to="Adapt blocking interface for Async use"/>
+    </change>
+    <change idref="t26" to="t20" to-position="0" resolved="yes">
+      <change idref="t26" attribute="internalEffortDone" type="real" from="0" to="21600"/>
+      <change idref="t26" attribute="startConstraintDate" type="date" to="2001-01-02T00:45:00.000Z"/>
+      <change idref="t26" attribute="title" type="string" to="Research Async in Java"/>
+    </change>
+    <change idref="t28" to="t20" to-position="1" resolved="yes">
+      <change idref="t28" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t28" attribute="internalPrerequisitesString" type="string" to="26FS"/>
+      <change idref="t28" attribute="title" type="string" to="Decide on Callback vs Futures"/>
+    </change>
+    <change idref="t31" to="t21" to-position="0" resolved="yes">
+      <change idref="t31" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t31" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t31" attribute="title" type="string" to="HTTP"/>
+    </change>
+    <change idref="t29" to="t21" to-position="1" resolved="yes">
+      <change idref="t29" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t29" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t29" attribute="title" type="string" to="JSON"/>
+    </change>
+    <change idref="t30" to="t29" to-position="0" resolved="yes">
+      <change idref="t30" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t30" attribute="startConstraintDate" type="date" to="2001-01-02T00:45:00.000Z"/>
+      <change idref="t30" attribute="title" type="string" to="Research JSON Libraries"/>
+    </change>
+    <change idref="t32" to="t29" to-position="1" resolved="yes">
+      <change idref="t32" attribute="effort" type="real" from="28800" to="60"/>
+      <change idref="t32" attribute="internalPrerequisitesString" type="string" to="30FS"/>
+      <change idref="t32" attribute="title" type="string" to="Select JSON Library"/>
+    </change>
+    <change idref="t24" to="t31" to-position="0" resolved="yes">
+      <change idref="t24" attribute="internalEffortDone" type="real" from="0" to="18000"/>
+      <change idref="t24" attribute="startConstraintDate" type="date" to="2001-01-01T16:00:00.000Z"/>
+      <change idref="t24" attribute="title" type="string" to="Research HTTP Libraries"/>
+    </change>
+    <change idref="t27" to="t31" to-position="1" resolved="yes">
+      <change idref="t27" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t27" attribute="internalPrerequisitesString" type="string" to="7FS, 24FS"/>
+      <change idref="t27" attribute="title" type="string" to="Produce Pro/Con analysis of HTTP Libraries"/>
+    </change>
+    <change idref="t33" to="t31" to-position="2" resolved="yes">
+      <change idref="t33" attribute="effort" type="real" from="28800" to="60"/>
+      <change idref="t33" attribute="internalPrerequisitesString" type="string" to="26FS, 27FS"/>
+      <change idref="t33" attribute="title" type="string" to="Select HTTP Library"/>
+    </change>
+    <change idref="t43" to="t39" to-position="0" resolved="yes">
+      <change idref="t43" attribute="title" type="string" to="Implement Memory backend"/>
+    </change>
+    <change idref="t44" to="t39" to-position="1" resolved="yes">
+      <change idref="t44" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t44" attribute="internalPrerequisitesString" type="string" to="36FS, 43FS"/>
+      <change idref="t44" attribute="title" type="string" to="Implement user-facing interface to backends"/>
+    </change>
+    <change idref="t41" to="t39" to-position="2" resolved="yes">
+      <change idref="t41" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t41" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t41" attribute="title" type="string" to="Blocking Interface with HTTP backend"/>
+    </change>
+    <change idref="t45" to="t39" to-position="3" resolved="yes">
+      <change idref="t45" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t46" to="t41" to-position="0" resolved="yes">
+      <change idref="t46" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t46" attribute="title" type="string" to="Adapt user interface to blocking HTTP backend"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-08T22:38:57.877Z" timestamp="2011-06-08T22:38:57.877Z">
+    <change idref="t3" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t3" attribute="styleDict" type="dict" to="{
+    &quot;font-size&quot; = 12;
+}" resolved="yes"/>
+    <change idref="t10" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t16" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t17" attribute="internalPrerequisitesString" type="string" from="15FS" to="15FS, 16FF, 39FS" resolved="yes"/>
+    <change idref="t17" attribute="startConstraintDate" type="date" from="2001-01-03T21:15:00.000Z" resolved="yes"/>
+    <change idref="t18" attribute="internalPrerequisitesString" type="string" from="12FS" to="12FS, 52FF" resolved="yes"/>
+    <change idref="t21" attribute="startConstraintDate" type="date" from="2001-01-03T16:00:00.000Z" to="2000-11-11T16:00:00.000Z" resolved="yes"/>
+    <change idref="t22" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t24" attribute="startConstraintDate" type="date" from="2001-01-03T16:00:00.000Z" to="2000-11-11T16:00:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="startConstraintDate" type="date" from="2001-01-04T00:45:00.000Z" to="2000-11-12T00:45:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t30" attribute="startConstraintDate" type="date" from="2001-01-04T00:45:00.000Z" to="2000-11-12T00:45:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t33" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t41" from="t39" from-position="2" resolved="yes">
+      <change idref="t41" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t41" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t41" attribute="title" type="string" to="Blocking Interface with HTTP backend"/>
+    </change>
+    <change idref="t50" to="t39" to-position="2" resolved="yes">
+      <change idref="t50" attribute="internalPrerequisitesString" type="string" to="32FS, 33FS"/>
+      <change idref="t50" attribute="title" type="string" to="Implement Blocking HTTP backend"/>
+    </change>
+    <change idref="t51" to="t39" to-position="3" resolved="yes">
+      <change idref="t51" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t51" attribute="internalPrerequisitesString" type="string" to="44FS, 50SS, 50FF"/>
+      <change idref="t51" attribute="title" type="string" to="Support HTTP in Blocking frontend"/>
+    </change>
+    <change idref="t53" to="t39" to-position="4" resolved="yes">
+      <change idref="t53" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t53" attribute="internalPrerequisitesString" type="string" to="37FS, 43FS"/>
+      <change idref="t53" attribute="title" type="string" to="Implement Async frontend for Memory backend"/>
+    </change>
+    <change idref="t52" to="t39" to-position="6" resolved="yes">
+      <change idref="t52" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t52" attribute="internalPrerequisitesString" type="string" to="45SS, 45FF"/>
+      <change idref="t52" attribute="title" type="string" to="Support HTTP in Async Frontend"/>
+    </change>
+    <change idref="t44" attribute="title" type="string" from="Implement user-facing interface to backends" to="Implement Blocking frontend" resolved="yes"/>
+    <change idref="t44" attribute="effort" type="real" from="10800" to="14400" resolved="yes"/>
+    <change idref="t45" attribute="title" type="string" from="Task 1" to="Implement Async HTTP backend" resolved="yes"/>
+    <change idref="t45" attribute="internalPrerequisitesString" type="string" to="50FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-08T23:06:31.375Z" timestamp="2011-06-08T23:06:31.375Z">
+    <change idref="t10" attribute="effort" type="real" from="7200" to="3600"/>
+    <change idref="t10" attribute="internalAssignments" type="string" from="1" to=""/>
+    <change idref="t18" from="t14" from-position="1">
+      <change idref="t18" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t18" attribute="internalPrerequisitesString" type="string" to="12FS, 52FF"/>
+      <change idref="t18" attribute="title" type="string" to="Ongoing API documentation of all classes, methods."/>
+    </change>
+    <change idref="t59" to="t14" to-position="1">
+      <change idref="t59" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t59" attribute="internalPrerequisitesString" type="string" to="43FF"/>
+      <change idref="t59" attribute="title" type="string" to="Document Memory backend"/>
+    </change>
+    <change idref="t63" to="t14" to-position="2">
+      <change idref="t63" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t63" attribute="internalPrerequisitesString" type="string" to="50FF, 50SS"/>
+      <change idref="t63" attribute="title" type="string" to="Document Blocking HTTP backend"/>
+    </change>
+    <change idref="t64" to="t14" to-position="3">
+      <change idref="t64" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t64" attribute="title" type="string" to="Document Async HTTP backend"/>
+    </change>
+    <change idref="t60" to="t14" to-position="4">
+      <change idref="t60" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t60" attribute="internalPrerequisitesString" type="string" to="44FF, 44SS, 51FF"/>
+      <change idref="t60" attribute="title" type="string" to="Document Blocking frontend"/>
+    </change>
+    <change idref="t61" to="t14" to-position="5">
+      <change idref="t61" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t61" attribute="internalPrerequisitesString" type="string" to="52FF, 53FF, 53SS"/>
+      <change idref="t61" attribute="title" type="string" to="Document Async frontend"/>
+    </change>
+    <change idref="t16" attribute="internalAssignments" type="string" from="1" to=""/>
+    <change idref="t26" attribute="effort" type="real" from="28800" to="36000"/>
+    <change idref="t28" attribute="internalAssignments" type="string" from="1" to=""/>
+    <change idref="t32" attribute="internalAssignments" type="string" from="1" to=""/>
+    <change idref="t33" attribute="internalAssignments" type="string" from="1" to=""/>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-08T23:16:43.332Z" timestamp="2011-06-08T23:16:43.332Z">
+    <change idref="t1" attribute="title" type="string" from="Code Style Documentation" to="Code Style Documentation and Training" resolved="yes"/>
+    <change idref="t73" to="t1" to-position="2" resolved="yes">
+      <change idref="t73" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t73" attribute="internalAssignments" type="string" from="" to="1; 3; 4"/>
+      <change idref="t73" attribute="title" type="string" to="Train team in Javadoc"/>
+    </change>
+    <change idref="t74" to="t1" to-position="3" resolved="yes">
+      <change idref="t74" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t74" attribute="internalAssignments" type="string" from="" to="1; 3; 4"/>
+      <change idref="t74" attribute="title" type="string" to="Train team in Junit"/>
+    </change>
+    <change idref="t11" attribute="title" type="string" from="Documentation" to="User Documentation" resolved="yes"/>
+    <change idref="t13" from="t11" from-position="1" resolved="yes">
+      <change idref="t13" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t13" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t13" attribute="title" type="string" to="User Documentation"/>
+    </change>
+    <change idref="t14" from="t11" from-position="0" resolved="yes">
+      <change idref="t14" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t14" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t14" attribute="title" type="string" to="Code Documentation"/>
+    </change>
+    <change idref="t71" to="t11" to-position="0" resolved="yes">
+      <change idref="t71" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t71" attribute="title" type="string" to="Train Sphinx domain expert"/>
+    </change>
+    <change idref="t70" to="t11" to-position="1" resolved="yes">
+      <change idref="t70" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t70" attribute="title" type="string" to="Contact Sponsor and determine how user documentation will be delievered"/>
+    </change>
+    <change idref="t17" from="t13" from-position="2" to="t11" to-position="2" resolved="yes"/>
+    <change idref="t17" attribute="internalPrerequisitesString" type="string" from="15FS, 16FF, 39FS" to="39FF, 70FF, 71FS" resolved="yes"/>
+    <change idref="t39" attribute="title" type="string" from="Implementation" to="Implementation and Code Documentation" resolved="yes"/>
+    <change idref="t65" to="t39" to-position="0" resolved="yes">
+      <change idref="t65" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t65" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t65" attribute="title" type="string" to="Memory Backend"/>
+    </change>
+    <change idref="t66" to="t65" to-position="0" resolved="yes">
+      <change idref="t66" attribute="title" type="string" to="Implement Memory Backend"/>
+    </change>
+    <change idref="t67" to="t65" to-position="1" resolved="yes">
+      <change idref="t67" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t67" attribute="internalPrerequisitesString" type="string" to="73FS"/>
+      <change idref="t67" attribute="title" type="string" to="Document Memory Backend"/>
+    </change>
+    <change idref="t68" to="t65" to-position="2" resolved="yes">
+      <change idref="t68" attribute="title" type="string" to="Create Unit Tests for Memory Backend"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-08T23:17:23.997Z" timestamp="2011-06-08T23:17:23.997Z">
+    <change idref="t3" attribute="effort" type="real" from="3600" to="1800" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T05:08:29.996Z" timestamp="2011-06-09T05:08:29.996Z">
+    <change idref="t28" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t30" attribute="effort" type="real" from="3600" to="7200" resolved="yes"/>
+    <change idref="t27" from="t31" from-position="1" resolved="yes">
+      <change idref="t27" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t27" attribute="internalPrerequisitesString" type="string" to="7FS, 24FS"/>
+      <change idref="t27" attribute="title" type="string" to="Produce Pro/Con analysis of HTTP Libraries"/>
+    </change>
+    <change idref="t32" attribute="effort" type="real" from="60" to="300" resolved="yes"/>
+    <change idref="t32" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t33" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t33" attribute="internalPrerequisitesString" type="string" from="26FS, 27FS" to="24FS, 26FS" resolved="yes"/>
+    <change idref="t37" attribute="internalPrerequisitesString" type="string" from="28FS, 36FS" to="28FS, 36FS, 89FS" resolved="yes"/>
+    <change idref="t39" attribute="internalPrerequisitesString" type="string" to="1FS" resolved="yes"/>
+    <change idref="t45" from="t39" from-position="6" resolved="yes">
+      <change idref="t45" attribute="internalPrerequisitesString" type="string" to="50FS"/>
+      <change idref="t45" attribute="title" type="string" to="Implement Async HTTP backend"/>
+    </change>
+    <change idref="t53" from="t39" from-position="5" resolved="yes">
+      <change idref="t53" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t53" attribute="internalPrerequisitesString" type="string" to="37FS, 43FS"/>
+      <change idref="t53" attribute="title" type="string" to="Implement Async frontend for Memory backend"/>
+    </change>
+    <change idref="t51" from="t39" from-position="4" resolved="yes">
+      <change idref="t51" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t51" attribute="internalPrerequisitesString" type="string" to="44FS, 50SS, 50FF"/>
+      <change idref="t51" attribute="title" type="string" to="Support HTTP in Blocking frontend"/>
+    </change>
+    <change idref="t50" from="t39" from-position="3" resolved="yes">
+      <change idref="t50" attribute="internalPrerequisitesString" type="string" to="32FS, 33FS"/>
+      <change idref="t50" attribute="title" type="string" to="Implement Blocking HTTP backend"/>
+    </change>
+    <change idref="t44" from="t39" from-position="2" resolved="yes">
+      <change idref="t44" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t44" attribute="internalPrerequisitesString" type="string" to="36FS, 43FS"/>
+      <change idref="t44" attribute="title" type="string" to="Implement Blocking frontend"/>
+    </change>
+    <change idref="t43" from="t39" from-position="1" resolved="yes">
+      <change idref="t43" attribute="title" type="string" to="Implement Memory backend"/>
+    </change>
+    <change idref="t52" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t52" attribute="title" type="string" from="Support HTTP in Async Frontend" to="Async API" resolved="yes"/>
+    <change idref="t52" attribute="effort" type="real" from="21600" resolved="yes"/>
+    <change idref="t52" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t52" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t52" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t52" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t52" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t52" attribute="internalPrerequisitesString" type="string" from="45SS, 45FF" to="37FS" resolved="yes"/>
+    <change idref="t52" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t52" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t52" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t92" to="t52" to-position="0" resolved="yes">
+      <change idref="t92" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t92" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t92" attribute="title" type="string" to="Async HTTP Backend"/>
+    </change>
+    <change idref="t100" to="t52" to-position="1" resolved="yes">
+      <change idref="t100" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t100" attribute="internalPrerequisitesString" type="string" to="92FS"/>
+      <change idref="t100" attribute="title" type="string" to="Implement Async Frontend"/>
+    </change>
+    <change idref="t101" to="t52" to-position="2" resolved="yes">
+      <change idref="t101" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t101" attribute="internalPrerequisitesString" type="string" to="100FF"/>
+      <change idref="t101" attribute="title" type="string" to="Document Async Frontend"/>
+    </change>
+    <change idref="t102" to="t52" to-position="3" resolved="yes">
+      <change idref="t102" attribute="internalPrerequisitesString" type="string" to="89FS, 100FF"/>
+      <change idref="t102" attribute="title" type="string" to="Adapt Test Suite to Async Frontend"/>
+    </change>
+    <change idref="t65" attribute="title" type="string" from="Memory Backend" to="Blocking API" resolved="yes"/>
+    <change idref="t86" to="t65" to-position="0" resolved="yes">
+      <change idref="t86" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t86" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t86" attribute="title" type="string" to="Memory Backend"/>
+    </change>
+    <change idref="t77" to="t65" to-position="1" resolved="yes">
+      <change idref="t77" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t77" attribute="internalPrerequisitesString" type="string" to="86FS"/>
+      <change idref="t77" attribute="title" type="string" to="Implement Blocking Frontend"/>
+    </change>
+    <change idref="t78" to="t65" to-position="2" resolved="yes">
+      <change idref="t78" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t78" attribute="internalPrerequisitesString" type="string" to="77FF"/>
+      <change idref="t78" attribute="title" type="string" to="Document Blocking Frontend"/>
+    </change>
+    <change idref="t79" to="t65" to-position="3" resolved="yes">
+      <change idref="t79" attribute="internalPrerequisitesString" type="string" to="74FS, 77FS"/>
+      <change idref="t79" attribute="title" type="string" to="Create Blocking Fronend Unit Test Suite"/>
+    </change>
+    <change idref="t88" to="t65" to-position="4" resolved="yes">
+      <change idref="t88" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t88" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t88" attribute="title" type="string" to="Blocking HTTP Backend"/>
+    </change>
+    <change idref="t89" to="t65" to-position="5" resolved="yes">
+      <change idref="t89" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t89" attribute="internalPrerequisitesString" type="string" to="88FS"/>
+      <change idref="t89" attribute="title" type="string" to="Extend Blocking Frontend to support HTTP"/>
+    </change>
+    <change idref="t94" to="t65" to-position="6" resolved="yes">
+      <change idref="t94" attribute="internalPrerequisitesString" type="string" to="10FS, 79FS, 89FS"/>
+      <change idref="t94" attribute="title" type="string" to="Jenkins-Run Integration Tests for Blocking API"/>
+    </change>
+    <change idref="t66" attribute="internalEffortDone" type="real" from="0" to="21600" resolved="yes"/>
+    <change idref="t67" attribute="internalPrerequisitesString" type="string" from="73FS" to="66FF, 73FS" resolved="yes"/>
+    <change idref="t68" attribute="effort" type="real" from="28800" to="7200" resolved="yes"/>
+    <change idref="t68" attribute="internalPrerequisitesString" type="string" to="66FF" resolved="yes"/>
+    <change idref="t66" from="t65" from-position="0" to="t86" to-position="0" resolved="yes"/>
+    <change idref="t67" from="t65" from-position="1" to="t86" to-position="1" resolved="yes"/>
+    <change idref="t68" from="t65" from-position="2" to="t86" to-position="2" resolved="yes"/>
+    <change idref="t90" to="t88" to-position="0" resolved="yes">
+      <change idref="t90" attribute="internalPrerequisitesString" type="string" to="32FS, 33FS"/>
+      <change idref="t90" attribute="title" type="string" to="Implement Blocking HTTP Backend"/>
+    </change>
+    <change idref="t91" to="t88" to-position="1" resolved="yes">
+      <change idref="t91" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t91" attribute="internalPrerequisitesString" type="string" to="90FF"/>
+      <change idref="t91" attribute="title" type="string" to="Document Blocking HTTP Backend"/>
+    </change>
+    <change idref="t93" to="t88" to-position="2" resolved="yes">
+      <change idref="t93" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t93" attribute="internalPrerequisitesString" type="string" to="90FF"/>
+      <change idref="t93" attribute="title" type="string" to="Create Unit Tests for Async HTTP Backend"/>
+    </change>
+    <change idref="t95" to="t92" to-position="0" resolved="yes">
+      <change idref="t95" attribute="effort" type="real" from="28800" to="36000"/>
+      <change idref="t95" attribute="title" type="string" to="Implement Async HTTP Backend"/>
+    </change>
+    <change idref="t96" to="t92" to-position="1" resolved="yes">
+      <change idref="t96" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t96" attribute="internalPrerequisitesString" type="string" to="95FF"/>
+      <change idref="t96" attribute="title" type="string" to="Document Async HTTP Backend"/>
+    </change>
+    <change idref="t97" to="t92" to-position="2" resolved="yes">
+      <change idref="t97" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t97" attribute="internalPrerequisitesString" type="string" to="95FF"/>
+      <change idref="t97" attribute="title" type="string" to="Create Unit Tests for Async HTTP Backend"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T05:19:42.323Z" timestamp="2011-06-09T05:19:42.323Z">
+    <change idref="t3" attribute="resourceLeveledDate" type="date" to="2001-01-02T00:00:00.000Z" resolved="yes"/>
+    <change idref="t7" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t7" attribute="resourceLeveledDate" type="date" to="2001-01-04T23:00:00.000Z" resolved="yes"/>
+    <change idref="t7" attribute="internalEffortDone" type="real" from="7200" to="0" resolved="yes"/>
+    <change idref="t8" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t8" attribute="resourceLeveledDate" type="date" to="2001-01-07T00:00:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t10" attribute="resourceLeveledDate" type="date" to="2001-01-07T23:00:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="internalAssignments" type="string" from="" to="4; 1; 3" resolved="yes"/>
+    <change idref="t17" attribute="resourceLeveledDate" type="date" to="2001-02-01T00:00:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t24" attribute="resourceLeveledDate" type="date" to="2001-01-03T23:00:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="internalAssignments" type="string" from="" to="3; 1" resolved="yes"/>
+    <change idref="t26" attribute="resourceLeveledDate" type="date" to="2001-01-03T23:00:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="resourceLeveledDate" type="date" to="2001-01-13T00:00:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t30" attribute="resourceLeveledDate" type="date" to="2001-01-01T23:00:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="resourceLeveledDate" type="date" to="2001-01-04T01:00:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="resourceLeveledDate" type="date" to="2001-01-07T23:00:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t36" attribute="resourceLeveledDate" type="date" to="2001-01-14T01:00:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t37" attribute="resourceLeveledDate" type="date" to="2001-01-21T00:00:00.000Z" resolved="yes"/>
+    <change idref="t39" attribute="internalPrerequisitesString" type="string" from="1FS" to="1FS, 8FS" resolved="yes"/>
+    <change idref="t66" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t66" attribute="resourceLeveledDate" type="date" to="2001-01-07T23:00:00.000Z" resolved="yes"/>
+    <change idref="t67" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t67" attribute="resourceLeveledDate" type="date" to="2001-01-11T01:00:00.000Z" resolved="yes"/>
+    <change idref="t68" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t68" attribute="resourceLeveledDate" type="date" to="2001-01-12T01:00:00.000Z" resolved="yes"/>
+    <change idref="t70" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t70" attribute="resourceLeveledDate" type="date" to="2001-01-04T23:00:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t71" attribute="resourceLeveledDate" type="date" to="2001-01-07T01:00:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="resourceLeveledDate" type="date" to="2001-01-02T01:00:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="resourceLeveledDate" type="date" to="2001-01-03T01:00:00.000Z" resolved="yes"/>
+    <change idref="t77" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t77" attribute="internalPrerequisitesString" type="string" from="86FS" to="86FF" resolved="yes"/>
+    <change idref="t77" attribute="resourceLeveledDate" type="date" to="2001-01-12T00:00:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t78" attribute="resourceLeveledDate" type="date" to="2001-01-13T01:00:00.000Z" resolved="yes"/>
+    <change idref="t79" attribute="internalAssignments" type="string" from="" to="1; 4" resolved="yes"/>
+    <change idref="t79" attribute="resourceLeveledDate" type="date" to="2001-01-15T01:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" to="2001-01-17T01:00:00.000Z" resolved="yes"/>
+    <change idref="t90" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" to="2001-01-08T00:00:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t91" attribute="resourceLeveledDate" type="date" to="2001-01-12T00:00:00.000Z" resolved="yes"/>
+    <change idref="t93" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t93" attribute="resourceLeveledDate" type="date" to="2001-01-13T01:00:00.000Z" resolved="yes"/>
+    <change idref="t94" attribute="internalAssignments" type="string" from="" to="1; 3" resolved="yes"/>
+    <change idref="t94" attribute="resourceLeveledDate" type="date" to="2001-01-19T00:00:00.000Z" resolved="yes"/>
+    <change idref="t95" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t95" attribute="resourceLeveledDate" type="date" to="2001-01-23T00:00:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t96" attribute="resourceLeveledDate" type="date" to="2001-01-27T23:00:00.000Z" resolved="yes"/>
+    <change idref="t97" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t97" attribute="resourceLeveledDate" type="date" to="2001-01-28T00:00:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t100" attribute="resourceLeveledDate" type="date" to="2001-01-30T00:00:00.000Z" resolved="yes"/>
+    <change idref="t101" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+    <change idref="t101" attribute="resourceLeveledDate" type="date" to="2001-01-31T00:00:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t102" attribute="resourceLeveledDate" type="date" to="2001-01-28T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T05:26:13.745Z" timestamp="2011-06-09T05:26:13.745Z">
+    <change idref="t3" attribute="resourceLeveledDate" type="date" from="2011-06-08T23:00:00.000Z" to="2011-06-14T22:30:00.000Z" resolved="yes"/>
+    <change idref="t7" attribute="resourceLeveledDate" type="date" from="2011-06-11T22:00:00.000Z" to="2011-06-16T22:30:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="resourceLeveledDate" type="date" from="2011-06-13T23:00:00.000Z" to="2011-06-20T22:30:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="resourceLeveledDate" type="date" from="2011-06-14T22:00:00.000Z" to="2011-06-21T22:30:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="resourceLeveledDate" type="date" from="2011-07-08T23:00:00.000Z" to="2011-07-28T00:00:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="resourceLeveledDate" type="date" from="2011-06-10T22:00:00.000Z" to="2011-06-15T23:30:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="resourceLeveledDate" type="date" from="2011-06-10T22:00:00.000Z" to="2011-06-15T22:30:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="resourceLeveledDate" type="date" from="2011-06-19T23:00:00.000Z" to="2011-06-22T00:00:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="resourceLeveledDate" type="date" from="2011-06-08T22:00:00.000Z" to="2011-06-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="resourceLeveledDate" type="date" from="2011-06-11T00:00:00.000Z" to="2011-06-26T23:00:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="resourceLeveledDate" type="date" from="2011-06-14T22:00:00.000Z" to="2011-06-21T23:00:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="resourceLeveledDate" type="date" from="2011-06-21T00:00:00.000Z" to="2011-07-04T00:00:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="resourceLeveledDate" type="date" from="2011-06-27T23:00:00.000Z" to="2011-07-12T00:00:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="resourceLeveledDate" type="date" from="2011-06-14T22:00:00.000Z" to="2011-06-21T22:30:00.000Z" resolved="yes"/>
+    <change idref="t67" attribute="resourceLeveledDate" type="date" from="2011-06-18T00:00:00.000Z" to="2011-06-27T00:00:00.000Z" resolved="yes"/>
+    <change idref="t68" attribute="resourceLeveledDate" type="date" from="2011-06-19T00:00:00.000Z" to="2011-06-28T23:00:00.000Z" resolved="yes"/>
+    <change idref="t70" attribute="resourceLeveledDate" type="date" from="2011-06-11T22:00:00.000Z" to="2011-06-16T22:30:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="resourceLeveledDate" type="date" from="2011-06-14T00:00:00.000Z" to="2011-06-21T00:00:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="resourceLeveledDate" type="date" from="2011-06-09T00:00:00.000Z" to="2011-06-13T22:30:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="resourceLeveledDate" type="date" from="2011-06-10T00:00:00.000Z" to="2011-06-15T00:00:00.000Z" resolved="yes"/>
+    <change idref="t77" attribute="resourceLeveledDate" type="date" from="2011-06-18T23:00:00.000Z" to="2011-06-28T23:00:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="resourceLeveledDate" type="date" from="2011-06-20T00:00:00.000Z" to="2011-06-30T23:00:00.000Z" resolved="yes"/>
+    <change idref="t79" attribute="resourceLeveledDate" type="date" from="2011-06-22T00:00:00.000Z" to="2011-07-03T00:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2011-06-24T00:00:00.000Z" to="2011-07-07T23:00:00.000Z" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" from="2011-06-14T23:00:00.000Z" to="2011-06-27T22:30:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="resourceLeveledDate" type="date" from="2011-06-18T23:00:00.000Z" to="2011-07-06T00:00:00.000Z" resolved="yes"/>
+    <change idref="t93" attribute="resourceLeveledDate" type="date" from="2011-06-20T00:00:00.000Z" to="2011-07-02T22:30:00.000Z" resolved="yes"/>
+    <change idref="t94" attribute="resourceLeveledDate" type="date" from="2011-06-25T23:00:00.000Z" to="2011-07-09T23:00:00.000Z" resolved="yes"/>
+    <change idref="t95" attribute="resourceLeveledDate" type="date" from="2011-06-29T23:00:00.000Z" to="2011-07-15T22:30:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="resourceLeveledDate" type="date" from="2011-07-04T22:00:00.000Z" to="2011-07-21T23:00:00.000Z" resolved="yes"/>
+    <change idref="t97" attribute="resourceLeveledDate" type="date" from="2011-07-04T23:00:00.000Z" to="2011-07-22T00:00:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="resourceLeveledDate" type="date" from="2011-07-06T23:00:00.000Z" to="2011-07-25T22:30:00.000Z" resolved="yes"/>
+    <change idref="t101" attribute="resourceLeveledDate" type="date" from="2011-07-07T23:00:00.000Z" to="2011-07-26T23:00:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="resourceLeveledDate" type="date" from="2011-07-04T23:00:00.000Z" to="2011-07-22T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <resource-change-set user="Erik Swanson" date="2011-06-08T22:15:13.408Z" timestamp="2011-06-08T22:15:13.408Z">
+    <change idref="r3" to="r-1" to-position="1" resolved="yes">
+      <change idref="r3" attribute="name" type="string" to="Developer A"/>
+    </change>
+    <change idref="r4" to="r-1" to-position="2" resolved="yes">
+      <change idref="r4" attribute="name" type="string" to="Developer B"/>
+    </change>
+    <change idref="r1" attribute="name" type="string" from="Resource 1" to="Architect" resolved="yes"/>
+  </resource-change-set>
+  <resource-change-set user="Erik Swanson" date="2011-06-08T23:06:31.375Z" timestamp="2011-06-08T23:06:31.375Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from="-;-;-;-;-;-;-" to="54000,61200;54000,61200;54000,61200;54000,61200;54000,61200;54000,61200;54000,61200"/>
+    <change idref="r8" to="r-1" to-position="0">
+      <change idref="r8" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="r8" attribute="name" type="string" to="Team"/>
+      <change idref="r8" attribute="resourceTypeRank" type="real" from="0" to="3"/>
+    </change>
+    <change idref="r1" from="r-1" from-position="0" to="r8" to-position="0"/>
+    <change idref="r3" from="r-1" from-position="1" to="r8" to-position="1"/>
+    <change idref="r4" from="r-1" from-position="2" to="r8" to-position="2"/>
+  </resource-change-set>
+  <resource-change-set user="Erik Swanson" date="2011-06-09T05:26:13.739Z" timestamp="2011-06-09T05:26:13.739Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from="54000,61200;54000,61200;54000,61200;54000,61200;54000,61200;54000,61200;54000,61200" to="55800,61200;55800,61200;55800,61200;55800,61200;55800,61200;55800,61200;55800,61200" resolved="yes"/>
+  </resource-change-set>
+  <metadata-change-set user="Erik Swanson" date="2011-06-08T22:15:13.408Z" timestamp="2011-06-08T22:15:13.408Z">
+    <change idref="m1" attribute="scheduleGranularity" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="m1" attribute="projectTitle" type="string" to="Java Burrow Client" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="Erik Swanson" date="2011-06-09T05:20:47.570Z" timestamp="2011-06-09T05:20:47.570Z">
+    <change idref="m1" attribute="fixedDate" type="date" to="2011-06-13T22:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="Erik Swanson" date="2011-06-09T05:26:13.739Z" timestamp="2011-06-09T05:26:13.739Z">
+    <change idref="m1" attribute="scheduleGranularity" type="real" from="1" to="0" resolved="yes"/>
+  </metadata-change-set>
+</changelog>
