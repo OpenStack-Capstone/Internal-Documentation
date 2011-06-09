@@ -582,6 +582,16 @@
     <change idref="t101" attribute="resourceLeveledDate" type="date" from="2011-07-07T23:00:00.000Z" to="2011-07-26T23:00:00.000Z" resolved="yes"/>
     <change idref="t102" attribute="resourceLeveledDate" type="date" from="2011-07-04T23:00:00.000Z" to="2011-07-22T00:00:00.000Z" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T05:36:00.872Z" timestamp="2011-06-09T05:36:00.872Z">
+    <change idref="t21" attribute="startConstraintDate" type="date" from="2011-04-18T15:00:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="startConstraintDate" type="date" from="2011-04-18T15:00:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="startConstraintDate" type="date" from="2011-04-18T23:45:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="startConstraintDate" type="date" from="2011-04-18T23:45:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T05:37:43.959Z" timestamp="2011-06-09T05:37:43.959Z">
+    <change idref="t17" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
+    <change idref="t17" attribute="internalAssignments" type="string" from="4; 1; 3" to="4; 1" resolved="yes"/>
+  </task-change-set>
   <resource-change-set user="Erik Swanson" date="2011-06-08T22:15:13.408Z" timestamp="2011-06-08T22:15:13.408Z">
     <change idref="r3" to="r-1" to-position="1" resolved="yes">
       <change idref="r3" attribute="name" type="string" to="Developer A"/>

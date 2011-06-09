@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="13" y="0" w="1387" h="878">
+  <window x="127" y="0" w="1386" h="878">
     <editing-scenario>dQf-uFqh4O9</editing-scenario>
     <view>task</view>
     <change-tracking/>
@@ -8,15 +8,15 @@
     <status-display>extended-alternate</status-display>
     <task-view>
       <split-view-divider-position>492</split-view-divider-position>
-      <outline x="0" y="455" w="492" h="746">
+      <outline x="0" y="47" w="492" h="746">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="377"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t88 t4 t86 t9 t92 t11 t31 t20 t1 t39 t19 t65 t21 t52 t29"/>
-        <selected-items-at-filter-time idrefs="t59 t102 t31 t17 t66 t80 t73 t24 t74 t67 t81 t32 t75 t82 t26 t33 t19 t68 t103 t69 t27 t83 t90 t76 t91 t28 t84 t77 t92 t29 t36 t50 t3 t78 t43 t85 t4 t44 t37 t51 t93 t79 t86 t94 t52 t87 t10 t45 t7 t88 t60 t39 t95 t8 t53 t11 t9 t96 t61 t89 t12 t97 t20 t13 t100 t98 t63 t21 t14 t70 t99 t64 t22 t71 t101 t15 t72 t30 t16 t65"/>
+        <expanded-items idrefs="t88 t4 t92 t9 t11 t86 t19 t20 t1 t31 t39 t65 t21 t52 t29"/>
+        <selected-items-at-filter-time idrefs="t26 t77 t8 t101 t96 t32 t9 t70 t78 t97 t65 t33 t52 t20 t71 t79 t102 t90 t66 t28 t21 t29 t91 t67 t86 t22 t73 t92 t17 t68 t36 t74 t10 t93 t3 t37 t88 t24 t4 t94 t100 t30 t11 t19 t89 t95 t31 t39 t7"/>
       </outline>
-      <gantt-view x="619" y="455" w="879" h="746">
+      <gantt-view x="-39" y="47" w="878" h="746">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -61,7 +61,7 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>291</split-view-divider-position>
-      <outline x="15" y="0" w="276" h="746">
+      <outline x="10" y="0" w="276" h="746">
         <column name="IM" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Type" width="48"/>
@@ -70,7 +70,7 @@
         <expanded-items idrefs="r8"/>
         <selected-items-at-filter-time idrefs="r4 r3 r8"/>
       </outline>
-      <timeline x="-420" y="0" w="1052" h="746">
+      <timeline x="-347" y="0" w="1052" h="746">
         <task-bar-label task-type="group" position="left">
           <key>Title</key>
         </task-bar-label>
@@ -186,18 +186,18 @@
       <integer>1</integer>
       <key>NSScalingFactor</key>
       <real>1</real>
-      <key>NSPrinterName</key>
-      <string>Stylus Photo R1800 (FW)</string>
       <key>NSRightMargin</key>
       <real>72</real>
       <key>NSBottomMargin</key>
       <real>90</real>
+      <key>NSPaperName</key>
+      <string>na-letter</string>
       <key>NSLeftMargin</key>
       <real>72</real>
       <key>NSTopMargin</key>
       <real>90</real>
-      <key>NSPaperName</key>
-      <string>na-letter</string>
+      <key>NSPrinterName</key>
+      <string>Stylus Photo R1800 (FW)</string>
     </printinfo-dictionary>
     <page-adornment>
       <master-page-headers>

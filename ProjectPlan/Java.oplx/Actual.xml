@@ -121,13 +121,12 @@
   <task id="t17">
     <title>Write narrative user documentation</title>
     <leveled-start>2011-07-28T00:00:00.000Z</leveled-start>
-    <effort>28800</effort>
+    <effort>36000</effort>
     <prerequisite-task idref="t39" kind="FF"/>
     <prerequisite-task idref="t70" kind="FF"/>
     <prerequisite-task idref="t71"/>
     <assignment idref="r4"/>
     <assignment idref="r1"/>
-    <assignment idref="r3"/>
   </task>
   <task id="t19">
     <title>Research and Design</title>
@@ -146,7 +145,6 @@
   <task id="t21">
     <title>Server Communication</title>
     <type>group</type>
-    <start-constraint-date>2011-04-18T15:00:00.000Z</start-constraint-date>
     <child-task idref="t31"/>
     <child-task idref="t29"/>
   </task>
@@ -161,7 +159,6 @@
     <leveled-start>2011-06-15T23:30:00.000Z</leveled-start>
     <effort>28800</effort>
     <effort-done>18000</effort-done>
-    <start-constraint-date>2011-04-18T15:00:00.000Z</start-constraint-date>
     <assignment idref="r1"/>
   </task>
   <task id="t26">
@@ -169,7 +166,6 @@
     <leveled-start>2011-06-15T22:30:00.000Z</leveled-start>
     <effort>36000</effort>
     <effort-done>21600</effort-done>
-    <start-constraint-date>2011-04-18T23:45:00.000Z</start-constraint-date>
     <assignment idref="r3"/>
     <assignment idref="r1"/>
   </task>
@@ -190,7 +186,6 @@
     <title>Research JSON Libraries</title>
     <leveled-start>2011-06-25T00:00:00.000Z</leveled-start>
     <effort>7200</effort>
-    <start-constraint-date>2011-04-18T23:45:00.000Z</start-constraint-date>
     <assignment idref="r4"/>
   </task>
   <task id="t31">
