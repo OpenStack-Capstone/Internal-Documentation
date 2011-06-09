@@ -21,7 +21,6 @@
 
   The code for these libraries will reside on Github, and the sponsor will link to them from the main Burrow site. 
   Documentation will reside on the main Burrow website. 
-
 \end{frame}
 
 \begin{frame}{Assumptions}
@@ -48,42 +47,49 @@
 \end{frame}
 
 \begin{frame}{Plan Overview}
-  Many steps may and will be performed in parallel.
+  The team will be split into two sub-teams of three.
+  Erik, Justin, and Cory will create a library in Java.
+  Tony, Fede and Adrian will create a library in C.
+
   \begin{enumerate}
   \item \sout{Meet with Eric Day to discuss project details}
   \item \sout{Decide on target languages}
-  \item Create skeleton projects and integrate them with burrow project infrastructure
-  \item Research asynchronous I/O in target languages
-  \item Create memory backend in target languages for testing
-  \item Modify existing python API as needed per language
-  \item Architect language appropriate callback mechanism
-  \item Code http backend
-  \item Write unit tests
+  \item Create skeleton projects and integrate them with burrow continuous integration infrastructure
+  \item Create blocking memory backends
+  \item Research JSON and HTTP libraries
+  \item Create blocking memory backend 
+  \item Research asynchronous I/O
+  \item Choose language appropriate callback mechanisms
+  \item Write asynchronous memory backend
+  \item Write asynchronous http backend
+  \item Write unit tests (All through the above)
   \item Write functional tests
   \item Code Freeze
-  \item \textit{Time Allowing} Write projects which use our libraries in 'cool' ways
+  \item \textit{Time Allowing} Write small projects which use our libraries in interesting ways.
   \end{enumerate}
 \end{frame}
 
-\begin{frame}{PERT Chart}
-  More research needed.
+\begin{frame}{C Gantt Chart}
+  \includegraphics{C-Gantt.pdf}
+\end{frame}
+
+\begin{frame}{Java Gantt Chart}
+  \includegraphics{Java-Gantt.pdf}
 \end{frame}
 
 \begin{frame}{Calendar}
-  People Offline:
-  \begin{itemize}
-  \item Cory: 5/28-5/21, 7/1-7/5
-  \item Erik: 8/3-8/7
-  \end{itemize}
+  \begin{tabular}{|c|c|}
+    \hline
+  \end{tabular}
 
 \end{frame}
 
-\begin{frame}{Meetings and Reviews}
-  \begin{itemize}
-  \item Jenkins Setup
-  \item Architecture review
-  \end{itemize}
-\end{frame}
+%\begin{frame}{Meetings and Reviews}
+%  \begin{itemize}
+%  \item Jenkins Setup
+%  \item Architecture review
+%  \end{itemize}
+%\end{frame}
 
 \begin{frame}{Resource Identification}
   Time:
