@@ -5,7 +5,7 @@
 \begin{document}
 
 \title{Team D Project Plan}
-\author[CK, TW, ES, AM, JW, \& FS]{Cory Kolbeck, Tony Wooster, Erik Swanson, Adrien Miranda, Justin Wagner, and Federico Saldarini}
+\author[CK, TW, ES, AM, JW, \& FS]{Cory Kolbeck, Tony Wooster, Erik Swanson, Adrian Miranda, Justin Wagner, and Federico Saldarini}
 \institute[PSU]{
   Portland State University\\
   Department of Computer Science\\
@@ -17,10 +17,16 @@
 \end{frame}
 
 \begin{frame}{Overview and Deliverables}
-  We are to implement client libraries to provide asynchronous communication with a Burrow message queue server.
+  \begin{center}{
+      \large
+      \textbf{We are to implement client libraries to provide asynchronous communication with a Burrow message queue server.}
 
-  The code for these libraries will reside on Github, and the sponsor will link to them from the main Burrow site. 
-  Documentation will reside on the main Burrow website. 
+      \vspace{1cm}
+      
+      The code for these libraries will reside on Github, and the sponsor will link to them from the main Burrow site. 
+      Documentation will reside on the main Burrow website. 
+    }
+  \end{center}
 \end{frame}
 
 \begin{frame}{Assumptions}
@@ -68,11 +74,15 @@
 \end{frame}
 
 \begin{frame}{C Gantt Chart}
-  \includegraphics{C-Gantt.pdf}
+  \includegraphics[width=0.95\linewidth]{C-Gantt.pdf}
 \end{frame}
 
 \begin{frame}{Java Gantt Chart}
-  \includegraphics{Java-Gantt.pdf}
+  \includegraphics[width=0.95\linewidth]{Java-Gantt-P1.pdf}
+\end{frame}
+
+\begin{frame}{Java Gantt Chart}
+  \includegraphics[width=0.95\linewidth]{Java-Gantt-P2.pdf}
 \end{frame}
 
 \begin{frame}{Calendar}
@@ -120,16 +130,16 @@
 
 \begin{frame}{Resource Identification - Expertise}
   \begin{center}
-    \begin{tabular}{|c|c|}
+    \begin{tabular}{|r|l|}
       \hline
-      \emph{Name} & \emph{}\\ \hline \hline
-      Justin & \\ \hline
-      Adrian & \\ \hline
-      Tony & \\ \hline
-      Erik & \\ \hline
-      Federico & \\ \hline
-      Cory & \\ \hline
-      Eric & \\ 
+      \emph{Name} & \emph{Expertise}\\ \hline \hline
+      Justin & -\\ \hline
+      Adrian & -\\ \hline
+      Tony & REST \\ \hline
+      Erik & REST \\ \hline
+      Federico & -\\ \hline
+      Cory & Parallel architecture, Basic Git \\ \hline
+      Eric & Async I/O in C, Burrow\\
       \hline
     \end{tabular}
   \end{center}
@@ -146,23 +156,24 @@
 
 \begin{frame}{Roles}
   \begin{center}
-    \begin{tabular}{|c|c|c|}
-      \hline
-      \emph{Role} & \emph{Responsibility} & \emph{Name(s)}\\ \hline \hline
-      Project Manager & Coordinate General Meetings, Designate Milestones, and Maintain Schedules & Cory\\ \hline
-      Point of Contact & Maintain Communication between 
-      Integration & Support Jenkins and Github issues & Cory\\ \hline 
-      Java Lead & Architect Java library and Delegate Coding and Research Tasks & Erik\\ \hline
-      C Lead & Architect C Library and Delegate Coding and Research Tasks & Tony\\ \hline
-      Java Development & Implement Designs of Java Lead & Cory, Justin, Erik\\ \hline
-      C Development & Implement Designs of C Lead & Adrien, Federico, Tony\\ \hline
-      System Support & Maintain Shared Machines & Cory\\ \hline
-      Unit Testing & Code Unit Tests for Every Function & Everyone\\ \hline
-      Functional Testing & Create Functional Tests for Each Language & To be delegated by appropriate lead\\ \hline
-      Memory Backend Creation & Create Memory Backend for Testing & To be delegated by appropriate lead\\ \hline
-      API Documentation & Write Language Specific Documentation & To be delegated by appropriate lead\\ \hline
-      General Documentation & Create a Language Agnostic Guide to Coding Burrow Clients & Tony\\ \hline
-    \end{tabular}
+    {\footnotesize
+      \begin{tabular*}{.966\linewidth}{| r | p{7.7cm} | l |}
+        \hline
+        \emph{Role} & \emph{Responsibility} & Initial\\ \hline \hline
+        Manager & Coordinate general geetings and maintain schedules & C\\ \hline
+        POC & Maintain communication between team and sponsor & C\\ \hline
+        Integration & Support Jenkins and Github issues & C\\ \hline 
+        Java Lead & Architect Java library and delegate coding and research tasks & E\\ \hline
+        C Lead & Architect C library and delegate coding and research tasks & T\\ \hline
+        Java Dev & Implement designs of Java lead & CJE\\ \hline
+        C Dev & Implement designs of C lead & AFT\\ \hline
+        Support & Maintain Shared Machines & C\\ \hline
+        Unit Testing & Code unit tests for every function & All\\ \hline
+        Func. Testing & Create functional tests for each language & tbd \\ \hline
+        API Docs & Write language specific documentation & tbd \\ \hline
+        General Docs & Create a language agnostic guide to coding burrow clients & T\\ \hline
+    \end{tabular*}
+    }
   \end{center}
 \end{frame}
 
@@ -171,22 +182,23 @@
   \item Risk: Team member drops out\\
     Consequence: Fewer man-hours available\\
     Mitigation: Scheduling as if we have less time\\
-  \item Risk: Architect drops out\\
+  \item Risk: Architect drops out
     Consequence: Possible loss of grand plan\\
-    Mitigation: Documentation, regular meetings to keep team members in the loop\\
+    Mitigation: Documentation, regular meetings to keep team members in the loop
   \item Risk: API Change mid-project\\
     Consequence: Project may need re-architecting\\
-    Mitigation: Modular design\\
+    Mitigation: Modular design
   \end{itemize}
 \end{frame}
 
 \begin{frame}{QA and Deployment}
-  Unit and regression testing will be ongoing using Burrow's existing Jenkins continuous integration system.
-  
-  Functional testing will take place in the weeks leading up to code freeze.
-
-  Deployment will consist of linking to our existing Github repositories (or possibly official forks)
-  from burrow.openstack.org.  Documentation will be pulled from Github by our sponsor for inclusion in the Burrow wiki.
+  \begin{itemize}
+  \item Unit and regression testing will be ongoing using Burrow's existing Jenkins continuous integration system.
+  \item Functional testing will take place in the weeks leading up to code freeze.
+  \item Deployment will consist of linking to our existing Github repositories (or possibly official forks)
+    from burrow.openstack.org.
+  \item Documentation will be pulled from Github by our sponsor for inclusion in the Burrow wiki.
+  \end{itemize}
 \end{frame}
 
 \end{document}
