@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="127" y="0" w="1386" h="878">
+  <window x="-195" y="0" w="1386" h="878">
     <editing-scenario>dQf-uFqh4O9</editing-scenario>
     <view>task</view>
     <change-tracking/>
@@ -8,7 +8,7 @@
     <status-display>extended-alternate</status-display>
     <task-view>
       <split-view-divider-position>492</split-view-divider-position>
-      <outline x="0" y="47" w="492" h="746">
+      <outline x="0" y="34" w="492" h="746">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="377"/>
@@ -16,7 +16,7 @@
         <expanded-items idrefs="t88 t4 t92 t9 t11 t86 t19 t20 t1 t31 t39 t65 t21 t52 t29"/>
         <selected-items-at-filter-time idrefs="t26 t77 t8 t101 t96 t32 t9 t70 t78 t97 t65 t33 t52 t20 t71 t79 t102 t90 t66 t28 t21 t29 t91 t67 t86 t22 t73 t92 t17 t68 t36 t74 t10 t93 t3 t37 t88 t24 t4 t94 t100 t30 t11 t19 t89 t95 t31 t39 t7"/>
       </outline>
-      <gantt-view x="-39" y="47" w="878" h="746">
+      <gantt-view x="8038" y="34" w="878" h="746">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -127,7 +127,7 @@
     <next-task-id>104</next-task-id>
     <next-resource-id>11</next-resource-id>
     <scenario id="dQf-uFqh4O9" name="Actual" filename="Actual.xml"/>
-    <date-display dates="true" times="true" seconds="false"/>
+    <date-display dates="true" times="false" seconds="false"/>
     <numbering-style>wbs</numbering-style>
     <critical-path-slack>0</critical-path-slack>
     <currency-format>$1,234.56</currency-format>

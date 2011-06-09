@@ -592,6 +592,29 @@
     <change idref="t17" attribute="effort" type="real" from="28800" to="36000" resolved="yes"/>
     <change idref="t17" attribute="internalAssignments" type="string" from="4; 1; 3" to="4; 1" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T05:43:43.335Z" timestamp="2011-06-09T05:43:43.335Z">
+    <change idref="t17" attribute="resourceLeveledDate" type="date" from="2011-07-28T00:00:00.000Z" to="2011-08-01T00:00:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="resourceLeveledDate" type="date" from="2011-06-22T00:00:00.000Z" to="2011-06-19T22:30:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="resourceLeveledDate" type="date" from="2011-06-26T23:00:00.000Z" to="2011-06-27T22:30:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="resourceLeveledDate" type="date" from="2011-06-21T23:00:00.000Z" to="2011-06-22T22:30:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="resourceLeveledDate" type="date" from="2011-07-04T00:00:00.000Z" to="2011-07-05T00:00:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="resourceLeveledDate" type="date" from="2011-07-12T00:00:00.000Z" to="2011-07-14T00:00:00.000Z" resolved="yes"/>
+    <change idref="t68" attribute="resourceLeveledDate" type="date" from="2011-06-28T23:00:00.000Z" to="2011-06-29T00:00:00.000Z" resolved="yes"/>
+    <change idref="t77" attribute="resourceLeveledDate" type="date" from="2011-06-28T23:00:00.000Z" to="2011-06-29T22:30:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="resourceLeveledDate" type="date" from="2011-06-30T23:00:00.000Z" to="2011-07-01T00:00:00.000Z" resolved="yes"/>
+    <change idref="t79" attribute="resourceLeveledDate" type="date" from="2011-07-03T00:00:00.000Z" to="2011-07-04T00:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2011-07-07T23:00:00.000Z" to="2011-07-09T22:30:00.000Z" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" from="2011-06-27T22:30:00.000Z" to="2011-06-28T22:30:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="resourceLeveledDate" type="date" from="2011-07-06T00:00:00.000Z" to="2011-07-07T00:00:00.000Z" resolved="yes"/>
+    <change idref="t93" attribute="resourceLeveledDate" type="date" from="2011-07-02T22:30:00.000Z" to="2011-07-03T22:30:00.000Z" resolved="yes"/>
+    <change idref="t94" attribute="resourceLeveledDate" type="date" from="2011-07-09T23:00:00.000Z" to="2011-07-11T22:30:00.000Z" resolved="yes"/>
+    <change idref="t95" attribute="resourceLeveledDate" type="date" from="2011-07-15T22:30:00.000Z" to="2011-07-17T22:30:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="resourceLeveledDate" type="date" from="2011-07-21T23:00:00.000Z" to="2011-07-24T22:30:00.000Z" resolved="yes"/>
+    <change idref="t97" attribute="resourceLeveledDate" type="date" from="2011-07-22T00:00:00.000Z" to="2011-07-25T00:00:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="resourceLeveledDate" type="date" from="2011-07-25T22:30:00.000Z" to="2011-07-28T22:30:00.000Z" resolved="yes"/>
+    <change idref="t101" attribute="resourceLeveledDate" type="date" from="2011-07-26T23:00:00.000Z" to="2011-07-30T00:00:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="resourceLeveledDate" type="date" from="2011-07-22T00:00:00.000Z" to="2011-07-25T22:30:00.000Z" resolved="yes"/>
+  </task-change-set>
   <resource-change-set user="Erik Swanson" date="2011-06-08T22:15:13.408Z" timestamp="2011-06-08T22:15:13.408Z">
     <change idref="r3" to="r-1" to-position="1" resolved="yes">
       <change idref="r3" attribute="name" type="string" to="Developer A"/>
@@ -624,5 +647,8 @@
   </metadata-change-set>
   <metadata-change-set user="Erik Swanson" date="2011-06-09T05:26:13.739Z" timestamp="2011-06-09T05:26:13.739Z">
     <change idref="m1" attribute="scheduleGranularity" type="real" from="1" to="0" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="Erik Swanson" date="2011-06-09T05:43:43.330Z" timestamp="2011-06-09T05:43:43.330Z">
+    <change idref="m1" attribute="scheduleGranularity" type="real" from="0" to="2" resolved="yes"/>
   </metadata-change-set>
 </changelog>

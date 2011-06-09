@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="dQf-uFqh4O9">
   <start-date>2011-06-13T22:00:00.000Z</start-date>
+  <granularity>days</granularity>
   <top-resource idref="r-1"/>
   <resource id="r-1">
     <type>Group</type>
@@ -120,7 +121,7 @@
   </task>
   <task id="t17">
     <title>Write narrative user documentation</title>
-    <leveled-start>2011-07-28T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-08-01T00:00:00.000Z</leveled-start>
     <effort>36000</effort>
     <prerequisite-task idref="t39" kind="FF"/>
     <prerequisite-task idref="t70" kind="FF"/>
@@ -171,7 +172,7 @@
   </task>
   <task id="t28">
     <title>Decide on Callback vs Futures</title>
-    <leveled-start>2011-06-22T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-06-19T22:30:00.000Z</leveled-start>
     <effort>3600</effort>
     <prerequisite-task idref="t26"/>
     <assignment idref="r1"/>
@@ -196,14 +197,14 @@
   </task>
   <task id="t32">
     <title>Select JSON Library</title>
-    <leveled-start>2011-06-26T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-06-27T22:30:00.000Z</leveled-start>
     <effort>300</effort>
     <prerequisite-task idref="t30"/>
     <assignment idref="r1"/>
   </task>
   <task id="t33">
     <title>Select HTTP Library</title>
-    <leveled-start>2011-06-21T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-06-22T22:30:00.000Z</leveled-start>
     <effort>60</effort>
     <prerequisite-task idref="t24"/>
     <prerequisite-task idref="t26"/>
@@ -211,13 +212,13 @@
   </task>
   <task id="t36">
     <title>Design interface of blocking API</title>
-    <leveled-start>2011-07-04T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-05T00:00:00.000Z</leveled-start>
     <effort>28800</effort>
     <assignment idref="r3"/>
   </task>
   <task id="t37">
     <title>Adapt blocking interface for Async use</title>
-    <leveled-start>2011-07-12T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-14T00:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <prerequisite-task idref="t28"/>
     <prerequisite-task idref="t36"/>
@@ -269,7 +270,7 @@
   </task>
   <task id="t68">
     <title>Create Unit Tests for Memory Backend</title>
-    <leveled-start>2011-06-28T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-06-29T00:00:00.000Z</leveled-start>
     <effort>7200</effort>
     <prerequisite-task idref="t66" kind="FF"/>
     <assignment idref="r3"/>
@@ -304,21 +305,21 @@
   </task>
   <task id="t77">
     <title>Implement Blocking Frontend</title>
-    <leveled-start>2011-06-28T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-06-29T22:30:00.000Z</leveled-start>
     <effort>10800</effort>
     <prerequisite-task idref="t86" kind="FF"/>
     <assignment idref="r4"/>
   </task>
   <task id="t78">
     <title>Document Blocking Frontend</title>
-    <leveled-start>2011-06-30T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-01T00:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <prerequisite-task idref="t77" kind="FF"/>
     <assignment idref="r4"/>
   </task>
   <task id="t79">
     <title>Create Blocking Fronend Unit Test Suite</title>
-    <leveled-start>2011-07-03T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-04T00:00:00.000Z</leveled-start>
     <effort>28800</effort>
     <prerequisite-task idref="t74"/>
     <prerequisite-task idref="t77"/>
@@ -341,14 +342,14 @@
   </task>
   <task id="t89">
     <title>Extend Blocking Frontend to support HTTP</title>
-    <leveled-start>2011-07-07T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-09T22:30:00.000Z</leveled-start>
     <effort>10800</effort>
     <prerequisite-task idref="t88"/>
     <assignment idref="r4"/>
   </task>
   <task id="t90">
     <title>Implement Blocking HTTP Backend</title>
-    <leveled-start>2011-06-27T22:30:00.000Z</leveled-start>
+    <leveled-start>2011-06-28T22:30:00.000Z</leveled-start>
     <effort>28800</effort>
     <prerequisite-task idref="t32"/>
     <prerequisite-task idref="t33"/>
@@ -356,7 +357,7 @@
   </task>
   <task id="t91">
     <title>Document Blocking HTTP Backend</title>
-    <leveled-start>2011-07-06T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-07T00:00:00.000Z</leveled-start>
     <effort>7200</effort>
     <prerequisite-task idref="t90" kind="FF"/>
     <assignment idref="r1"/>
@@ -370,14 +371,14 @@
   </task>
   <task id="t93">
     <title>Create Unit Tests for Async HTTP Backend</title>
-    <leveled-start>2011-07-02T22:30:00.000Z</leveled-start>
+    <leveled-start>2011-07-03T22:30:00.000Z</leveled-start>
     <effort>7200</effort>
     <prerequisite-task idref="t90" kind="FF"/>
     <assignment idref="r3"/>
   </task>
   <task id="t94">
     <title>Jenkins-Run Integration Tests for Blocking API</title>
-    <leveled-start>2011-07-09T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-11T22:30:00.000Z</leveled-start>
     <effort>28800</effort>
     <prerequisite-task idref="t10"/>
     <prerequisite-task idref="t79"/>
@@ -387,41 +388,41 @@
   </task>
   <task id="t95">
     <title>Implement Async HTTP Backend</title>
-    <leveled-start>2011-07-15T22:30:00.000Z</leveled-start>
+    <leveled-start>2011-07-17T22:30:00.000Z</leveled-start>
     <effort>36000</effort>
     <assignment idref="r3"/>
   </task>
   <task id="t96">
     <title>Document Async HTTP Backend</title>
-    <leveled-start>2011-07-21T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-24T22:30:00.000Z</leveled-start>
     <effort>3600</effort>
     <prerequisite-task idref="t95" kind="FF"/>
     <assignment idref="r1"/>
   </task>
   <task id="t97">
     <title>Create Unit Tests for Async HTTP Backend</title>
-    <leveled-start>2011-07-22T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-25T00:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <prerequisite-task idref="t95" kind="FF"/>
     <assignment idref="r1"/>
   </task>
   <task id="t100">
     <title>Implement Async Frontend</title>
-    <leveled-start>2011-07-25T22:30:00.000Z</leveled-start>
+    <leveled-start>2011-07-28T22:30:00.000Z</leveled-start>
     <effort>7200</effort>
     <prerequisite-task idref="t92"/>
     <assignment idref="r4"/>
   </task>
   <task id="t101">
     <title>Document Async Frontend</title>
-    <leveled-start>2011-07-26T23:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-30T00:00:00.000Z</leveled-start>
     <effort>7200</effort>
     <prerequisite-task idref="t100" kind="FF"/>
     <assignment idref="r4"/>
   </task>
   <task id="t102">
     <title>Adapt Test Suite to Async Frontend</title>
-    <leveled-start>2011-07-22T00:00:00.000Z</leveled-start>
+    <leveled-start>2011-07-25T22:30:00.000Z</leveled-start>
     <effort>28800</effort>
     <prerequisite-task idref="t89"/>
     <prerequisite-task idref="t100" kind="FF"/>
