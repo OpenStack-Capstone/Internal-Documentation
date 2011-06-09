@@ -1,11 +1,11 @@
 \documentclass{beamer}
-\usetheme{default}
+\usetheme{Madrid}
 \usepackage[normalem]{ulem}
 
 \begin{document}
 
 \title{Team D Project Plan}
-\author[C. Kolbeck, T. Wooster, E. Swanson, A. Miranda, J. Wagner, and F. Saldarini]{Cory Kolbeck, Tony Wooster, Erik Swanson, Adrien Miranda, Justin Wagner, and Federico Saldarini}
+\author[CK, TW, ES, AM, JW, \& FS]{Cory Kolbeck, Tony Wooster, Erik Swanson, Adrien Miranda, Justin Wagner, and Federico Saldarini}
 \institute[PSU]{
   Portland State University\\
   Department of Computer Science\\
@@ -47,24 +47,22 @@
 \end{frame}
 
 \begin{frame}{Plan Overview}
-  The team will be split into two sub-teams of three.
+  The team will be split into two teams of three.
   Erik, Justin, and Cory will create a library in Java.
   Tony, Fede and Adrian will create a library in C.
 
   \begin{enumerate}
   \item \sout{Meet with Eric Day to discuss project details}
   \item \sout{Decide on target languages}
-  \item Create skeleton projects and integrate them with burrow continuous integration infrastructure
+  \item \sout{Create skeleton projects} and integrate them with burrow continuous integration infrastructure
   \item Create blocking memory backends
-  \item Research JSON and HTTP libraries
+  \item Research and choose JSON and HTTP libraries
   \item Create blocking memory backend 
   \item Research asynchronous I/O
-  \item Choose language appropriate callback mechanisms
+  \item \sout{Choose language appropriate callback mechanisms}
   \item Write asynchronous memory backend
   \item Write asynchronous http backend
-  \item Write unit tests (All through the above)
   \item Write functional tests
-  \item Code Freeze
   \item \textit{Time Allowing} Write small projects which use our libraries in interesting ways.
   \end{enumerate}
 \end{frame}
@@ -78,62 +76,101 @@
 \end{frame}
 
 \begin{frame}{Calendar}
-  \begin{tabular}{|c|c|}
-    \hline
-  \end{tabular}
-
+  \begin{center}
+    \begin{tabular}{|c|c|}
+      \hline
+      \emph{Week of} & \emph{Deliverable}\\ \hline \hline
+      Jun 05 & Project Plan, Architecture Overview\\ \hline
+      Jun 12 & \\ \hline
+      Jun 19 & \\ \hline
+      Jun 26 & Blocking Memory Backend\\ \hline
+      Jul 03 & Blocking HTTP Backend\\ \hline
+      Jul 10 & \\ \hline
+      Jul 17 & Async Memory Backend\\ \hline
+      Jul 24 & Async HTTP Backend\\ \hline
+      Jul 31 & Narrative Documentation, Sponsor Delivery\\\hline
+      Aug 08 & Final Presentation\\ \hline
+    \end{tabular}
+    \end{center}
 \end{frame}
 
-%\begin{frame}{Meetings and Reviews}
-%  \begin{itemize}
-%  \item Jenkins Setup
-%  \item Architecture review
-%  \end{itemize}
-%\end{frame}
-
-\begin{frame}{Resource Identification}
-  Time:
-  \begin{tabular}{c|c}
-    \emph{Name} & \emph{Available Hours/Week}\\ \hline
-    Justin & 8-10\\ \hline
-    Adrian & 8-10\\ \hline
-    Tony & 8-10\\ \hline
-    Erik & 10-15\\ \hline
-    Federico & 10+\\ \hline
-    Cory & 10-15\\ \hline
+\begin{frame}{Meetings and Reviews}
+  \begin{itemize}
+  \item In person meetings with sponsor every 1-2 weeks.
+  \item IRC consultation as needed.
+  \item Reviews at milestones as previously noted.
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Resource Identification - Time}
+  \begin{center}
+    \begin{tabular}{|c|c|}
+      \hline
+      \emph{Name} & \emph{Available Hours/Week}\\ \hline \hline
+      Justin & 8-10\\ \hline
+      Adrian & 8-10\\ \hline
+      Tony & 8-10\\ \hline
+      Erik & 10-15\\ \hline
+      Federico & 10+\\ \hline
+      Cory & 10-15 \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Resource Identification - Expertise}
+  \begin{center}
+    \begin{tabular}{|c|c|}
+      \hline
+      \emph{Name} & \emph{}\\ \hline \hline
+      Justin & \\ \hline
+      Adrian & \\ \hline
+      Tony & \\ \hline
+      Erik & \\ \hline
+      Federico & \\ \hline
+      Cory & \\ \hline
+      Eric & \\ 
+      \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
 \begin{frame}{Configuration Management}
-  Code will live in Github, using their systems for ticketing and bug reporting.  
-  Should it become necessary, language leads will be in charge of resolving merge conflicts.
+  \begin{itemize}
+  \item Github will be used for source control
+  \item Ticketing and bug reporting will be through Github's builtin utilities
+  \item Should it become necessary, language leads will be in charge of resolving merge conflicts
+  \item Unit testing and commit screening will be will be through the Jenkins continuous integration framework.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Roles}
-  \begin{tabular}{|c|c|c|}
-    \hline
-    \emph{Role} & \emph{Responsibility} & \emph{Name(s)}\\ \hline \hline
-    Project Manager & Coordinate General Meetings, Designate Milestones, and Maintain Schedules & Cory\\ \hline
-    Point of Contact & Maintain Communication between 
-    Integration & Support Jenkins and Github issues & Cory\\ \hline 
-    Java Lead & Architect Java library and Delegate Coding and Research Tasks & Erik\\ \hline
-    C Lead & Architect C Library and Delegate Coding and Research Tasks & Tony\\ \hline
-    Java Development & Implement Designs of Java Lead & Cory, Justin, Erik\\ \hline
-    C Development & Implement Designs of C Lead & Adrien, Federico, Tony\\ \hline
-    System Support & Maintain Shared Machines & Cory\\ \hline
-    Unit Testing & Code Unit Tests for Every Function & Everyone\\ \hline
-    Functional Testing & Create Functional Tests for Each Language & To be delegated by appropriate lead\\ \hline
-    Memory Backend Creation & Create Memory Backend for Testing & To be delegated by appropriate lead\\ \hline
-    API Documentation & Write Language Specific Documentation & To be delegated by appropriate lead\\ \hline
-    General Documentation & Create a Language Agnostic Guide to Coding Burrow Clients & ?Tony?\\ \hline
-  \end{tabular}
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      \emph{Role} & \emph{Responsibility} & \emph{Name(s)}\\ \hline \hline
+      Project Manager & Coordinate General Meetings, Designate Milestones, and Maintain Schedules & Cory\\ \hline
+      Point of Contact & Maintain Communication between 
+      Integration & Support Jenkins and Github issues & Cory\\ \hline 
+      Java Lead & Architect Java library and Delegate Coding and Research Tasks & Erik\\ \hline
+      C Lead & Architect C Library and Delegate Coding and Research Tasks & Tony\\ \hline
+      Java Development & Implement Designs of Java Lead & Cory, Justin, Erik\\ \hline
+      C Development & Implement Designs of C Lead & Adrien, Federico, Tony\\ \hline
+      System Support & Maintain Shared Machines & Cory\\ \hline
+      Unit Testing & Code Unit Tests for Every Function & Everyone\\ \hline
+      Functional Testing & Create Functional Tests for Each Language & To be delegated by appropriate lead\\ \hline
+      Memory Backend Creation & Create Memory Backend for Testing & To be delegated by appropriate lead\\ \hline
+      API Documentation & Write Language Specific Documentation & To be delegated by appropriate lead\\ \hline
+      General Documentation & Create a Language Agnostic Guide to Coding Burrow Clients & Tony\\ \hline
+    \end{tabular}
+  \end{center}
 \end{frame}
 
 \begin{frame}{Risk Management}
   \begin{itemize}
   \item Risk: Team member drops out\\
     Consequence: Fewer man-hours available\\
-    Mitigation: Scheduling as if we have 2 weeks fewer\\
+    Mitigation: Scheduling as if we have less time\\
   \item Risk: Architect drops out\\
     Consequence: Possible loss of grand plan\\
     Mitigation: Documentation, regular meetings to keep team members in the loop\\

@@ -1,4 +1,4 @@
 plan: 
-	pdflatex -interaction batchmode -file-line-error  plan.tex
+	pdflatex -interaction batchmode -file-line-error plan.tex
 
 
