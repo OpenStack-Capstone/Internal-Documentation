@@ -615,6 +615,113 @@
     <change idref="t101" attribute="resourceLeveledDate" type="date" from="2011-07-26T23:00:00.000Z" to="2011-07-30T00:00:00.000Z" resolved="yes"/>
     <change idref="t102" attribute="resourceLeveledDate" type="date" from="2011-07-22T00:00:00.000Z" to="2011-07-25T22:30:00.000Z" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T06:41:37.052Z" timestamp="2011-06-09T06:41:37.052Z">
+    <change idref="t108" to="t9" to-position="1" resolved="yes">
+      <change idref="t108" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t108" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t108" attribute="internalPrerequisitesString" type="string" to="10FS"/>
+      <change idref="t108" attribute="resourceLeveledDate" type="date" to="2011-06-22T22:30:00.000Z"/>
+      <change idref="t108" attribute="title" type="string" to="Arrange for Jenkins to run a Burrow Server for Functional Tests"/>
+    </change>
+    <change idref="t17" attribute="resourceLeveledDate" type="date" from="2011-08-01T00:00:00.000Z" to="2011-07-28T23:00:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="resourceLeveledDate" type="date" from="2011-06-19T22:30:00.000Z" to="2011-06-22T00:00:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="resourceLeveledDate" type="date" from="2011-06-27T22:30:00.000Z" to="2011-06-26T23:00:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="resourceLeveledDate" type="date" from="2011-06-22T22:30:00.000Z" to="2011-06-21T23:00:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="resourceLeveledDate" type="date" from="2011-07-05T00:00:00.000Z" to="2011-06-30T00:00:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="resourceLeveledDate" type="date" from="2011-07-14T00:00:00.000Z" to="2011-07-09T23:00:00.000Z" resolved="yes"/>
+    <change idref="t104" to="t52" to-position="0" resolved="yes">
+      <change idref="t104" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t104" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t104" attribute="title" type="string" to="Async Memory Backend"/>
+    </change>
+    <change idref="t92" from="t52" from-position="1" to="t52" to-position="4" resolved="yes"/>
+    <change idref="t68" attribute="title" type="string" from="Create Unit Tests for Memory Backend" to="Create Direct Unit Tests for Memory Backend" resolved="yes"/>
+    <change idref="t68" attribute="resourceLeveledDate" type="date" from="2011-06-29T00:00:00.000Z" to="2011-06-28T23:00:00.000Z" resolved="yes"/>
+    <change idref="t77" attribute="resourceLeveledDate" type="date" from="2011-06-29T22:30:00.000Z" to="2011-06-28T23:00:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="resourceLeveledDate" type="date" from="2011-07-01T00:00:00.000Z" to="2011-06-30T23:00:00.000Z" resolved="yes"/>
+    <change idref="t79" attribute="resourceLeveledDate" type="date" from="2011-07-04T00:00:00.000Z" to="2011-07-03T00:00:00.000Z" resolved="yes"/>
+    <change idref="t93" from="t88" from-position="2" resolved="yes">
+      <change idref="t93" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t93" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t93" attribute="internalPrerequisitesString" type="string" to="90FF"/>
+      <change idref="t93" attribute="resourceLeveledDate" type="date" to="2011-07-03T22:30:00.000Z"/>
+      <change idref="t93" attribute="title" type="string" to="Create Unit Tests for Async HTTP Backend"/>
+    </change>
+    <change idref="t89" attribute="internalAssignments" type="string" from="4" to="1" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2011-07-09T22:30:00.000Z" to="2011-07-07T23:00:00.000Z" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" from="2011-06-28T22:30:00.000Z" to="2011-06-27T22:30:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="resourceLeveledDate" type="date" from="2011-07-07T00:00:00.000Z" to="2011-07-06T00:00:00.000Z" resolved="yes"/>
+    <change idref="t92" attribute="internalPrerequisitesString" type="string" to="104FS" resolved="yes"/>
+    <change idref="t97" from="t92" from-position="2" resolved="yes">
+      <change idref="t97" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t97" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t97" attribute="internalPrerequisitesString" type="string" to="95FF"/>
+      <change idref="t97" attribute="resourceLeveledDate" type="date" to="2011-07-25T00:00:00.000Z"/>
+      <change idref="t97" attribute="title" type="string" to="Create Unit Tests for Async HTTP Backend"/>
+    </change>
+    <change idref="t94" attribute="title" type="string" from="Jenkins-Run Integration Tests for Blocking API" to="Develop Integration Tests" resolved="yes"/>
+    <change idref="t94" attribute="internalAssignments" type="string" from="1; 3" to="4" resolved="yes"/>
+    <change idref="t94" attribute="resourceLeveledDate" type="date" from="2011-07-11T22:30:00.000Z" to="2011-07-06T22:30:00.000Z" resolved="yes"/>
+    <change idref="t94" attribute="internalPrerequisitesString" type="string" from="10FS, 79FS, 89FS" to="79FS, 89FF, 108FS" resolved="yes"/>
+    <change idref="t95" attribute="resourceLeveledDate" type="date" from="2011-07-17T22:30:00.000Z" to="2011-07-24T00:00:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="internalAssignments" type="string" from="1" to="3" resolved="yes"/>
+    <change idref="t96" attribute="resourceLeveledDate" type="date" from="2011-07-24T22:30:00.000Z" to="2011-07-31T00:00:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="resourceLeveledDate" type="date" from="2011-07-28T22:30:00.000Z" to="2011-07-16T23:00:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="internalPrerequisitesString" type="string" from="92FS" to="105FS" resolved="yes"/>
+    <change idref="t101" attribute="resourceLeveledDate" type="date" from="2011-07-30T00:00:00.000Z" to="2011-07-18T00:00:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="resourceLeveledDate" type="date" from="2011-07-25T22:30:00.000Z" to="2011-07-18T22:30:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="internalPrerequisitesString" type="string" from="89FS, 100FF" to="89FS, 100FS" resolved="yes"/>
+    <change idref="t105" to="t104" to-position="0" resolved="yes">
+      <change idref="t105" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t105" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t105" attribute="resourceLeveledDate" type="date" to="2011-07-12T22:30:00.000Z"/>
+      <change idref="t105" attribute="title" type="string" to="Implement Async Reactor for Memory Backend"/>
+    </change>
+    <change idref="t107" to="t104" to-position="1" resolved="yes">
+      <change idref="t107" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t107" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t107" attribute="internalPrerequisitesString" type="string" to="105FF"/>
+      <change idref="t107" attribute="resourceLeveledDate" type="date" to="2011-07-16T23:00:00.000Z"/>
+      <change idref="t107" attribute="title" type="string" to="Document Memory Reactor"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Erik Swanson" date="2011-06-09T06:50:24.962Z" timestamp="2011-06-09T06:50:24.962Z">
+    <change idref="t3" attribute="resourceLeveledDate" type="date" from="2011-06-14T22:30:00.000Z" to="2011-06-13T23:00:00.000Z" resolved="yes"/>
+    <change idref="t7" attribute="resourceLeveledDate" type="date" from="2011-06-16T22:30:00.000Z" to="2011-06-15T22:10:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="resourceLeveledDate" type="date" from="2011-06-20T22:30:00.000Z" to="2011-06-17T23:10:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="resourceLeveledDate" type="date" from="2011-06-21T22:30:00.000Z" to="2011-06-18T00:10:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="resourceLeveledDate" type="date" from="2011-07-28T23:00:00.000Z" to="2011-07-22T23:10:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="resourceLeveledDate" type="date" from="2011-06-15T23:30:00.000Z" to="2011-06-14T00:10:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="resourceLeveledDate" type="date" from="2011-06-15T22:30:00.000Z" to="2011-06-14T00:10:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="resourceLeveledDate" type="date" from="2011-06-22T00:00:00.000Z" to="2011-06-18T00:11:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="resourceLeveledDate" type="date" from="2011-06-25T00:00:00.000Z" to="2011-06-22T22:10:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="resourceLeveledDate" type="date" from="2011-06-26T23:00:00.000Z" to="2011-06-23T00:10:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="resourceLeveledDate" type="date" from="2011-06-21T23:00:00.000Z" to="2011-06-18T00:10:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="resourceLeveledDate" type="date" from="2011-06-30T00:00:00.000Z" to="2011-06-25T00:10:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="resourceLeveledDate" type="date" from="2011-07-09T23:00:00.000Z" to="2011-07-07T01:10:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="resourceLeveledDate" type="date" from="2011-06-21T22:30:00.000Z" to="2011-06-18T00:10:00.000Z" resolved="yes"/>
+    <change idref="t67" attribute="resourceLeveledDate" type="date" from="2011-06-27T00:00:00.000Z" to="2011-06-23T00:10:00.000Z" resolved="yes"/>
+    <change idref="t68" attribute="resourceLeveledDate" type="date" from="2011-06-28T23:00:00.000Z" to="2011-06-24T22:10:00.000Z" resolved="yes"/>
+    <change idref="t70" attribute="resourceLeveledDate" type="date" from="2011-06-16T22:30:00.000Z" to="2011-06-15T22:10:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="resourceLeveledDate" type="date" from="2011-06-21T00:00:00.000Z" to="2011-06-18T00:10:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="resourceLeveledDate" type="date" from="2011-06-13T22:30:00.000Z" to="2011-06-13T23:30:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="resourceLeveledDate" type="date" from="2011-06-15T00:00:00.000Z" to="2011-06-14T00:50:00.000Z" resolved="yes"/>
+    <change idref="t77" attribute="resourceLeveledDate" type="date" from="2011-06-28T23:00:00.000Z" to="2011-06-23T01:10:00.000Z" resolved="yes"/>
+    <change idref="t78" attribute="resourceLeveledDate" type="date" from="2011-06-30T23:00:00.000Z" to="2011-06-25T00:10:00.000Z" resolved="yes"/>
+    <change idref="t79" attribute="resourceLeveledDate" type="date" from="2011-07-03T00:00:00.000Z" to="2011-06-28T00:10:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2011-07-07T23:00:00.000Z" to="2011-07-06T22:10:00.000Z" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" from="2011-06-27T22:30:00.000Z" to="2011-06-30T00:10:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="resourceLeveledDate" type="date" from="2011-07-06T00:00:00.000Z" to="2011-07-05T00:10:00.000Z" resolved="yes"/>
+    <change idref="t94" attribute="resourceLeveledDate" type="date" from="2011-07-06T22:30:00.000Z" to="2011-07-02T01:10:00.000Z" resolved="yes"/>
+    <change idref="t95" attribute="resourceLeveledDate" type="date" from="2011-07-24T00:00:00.000Z" to="2011-07-19T01:10:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="resourceLeveledDate" type="date" from="2011-07-31T00:00:00.000Z" to="2011-07-25T23:10:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="resourceLeveledDate" type="date" from="2011-07-16T23:00:00.000Z" to="2011-07-13T23:10:00.000Z" resolved="yes"/>
+    <change idref="t101" attribute="resourceLeveledDate" type="date" from="2011-07-18T00:00:00.000Z" to="2011-07-14T01:10:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="resourceLeveledDate" type="date" from="2011-07-18T22:30:00.000Z" to="2011-07-14T01:10:00.000Z" resolved="yes"/>
+    <change idref="t105" attribute="resourceLeveledDate" type="date" from="2011-07-12T22:30:00.000Z" to="2011-07-09T01:10:00.000Z" resolved="yes"/>
+    <change idref="t107" attribute="resourceLeveledDate" type="date" from="2011-07-16T23:00:00.000Z" to="2011-07-13T23:10:00.000Z" resolved="yes"/>
+    <change idref="t108" attribute="resourceLeveledDate" type="date" from="2011-06-22T22:30:00.000Z" to="2011-06-18T01:10:00.000Z" resolved="yes"/>
+  </task-change-set>
   <resource-change-set user="Erik Swanson" date="2011-06-08T22:15:13.408Z" timestamp="2011-06-08T22:15:13.408Z">
     <change idref="r3" to="r-1" to-position="1" resolved="yes">
       <change idref="r3" attribute="name" type="string" to="Developer A"/>
@@ -638,6 +745,9 @@
   <resource-change-set user="Erik Swanson" date="2011-06-09T05:26:13.739Z" timestamp="2011-06-09T05:26:13.739Z">
     <change idref="r-1" attribute="standardHoursString" type="string" from="54000,61200;54000,61200;54000,61200;54000,61200;54000,61200;54000,61200;54000,61200" to="55800,61200;55800,61200;55800,61200;55800,61200;55800,61200;55800,61200;55800,61200" resolved="yes"/>
   </resource-change-set>
+  <resource-change-set user="Erik Swanson" date="2011-06-09T06:50:24.956Z" timestamp="2011-06-09T06:50:24.956Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from="55800,61200;55800,61200;55800,61200;55800,61200;55800,61200;55800,61200;55800,61200" to=";54000,68400;;54000,68400;;54000,68400;" resolved="yes"/>
+  </resource-change-set>
   <metadata-change-set user="Erik Swanson" date="2011-06-08T22:15:13.408Z" timestamp="2011-06-08T22:15:13.408Z">
     <change idref="m1" attribute="scheduleGranularity" type="real" from="0" to="1" resolved="yes"/>
     <change idref="m1" attribute="projectTitle" type="string" to="Java Burrow Client" resolved="yes"/>
@@ -650,5 +760,12 @@
   </metadata-change-set>
   <metadata-change-set user="Erik Swanson" date="2011-06-09T05:43:43.330Z" timestamp="2011-06-09T05:43:43.330Z">
     <change idref="m1" attribute="scheduleGranularity" type="real" from="0" to="2" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="Erik Swanson" date="2011-06-09T06:41:37.046Z" timestamp="2011-06-09T06:41:37.046Z">
+    <change idref="m1" attribute="scheduleGranularity" type="real" from="2" to="1" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="Erik Swanson" date="2011-06-09T06:50:24.956Z" timestamp="2011-06-09T06:50:24.956Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2011-06-13T22:00:00.000Z" to="2011-06-12T22:00:00.000Z" resolved="yes"/>
+    <change idref="m1" attribute="scheduleGranularity" type="real" from="1" to="0" resolved="yes"/>
   </metadata-change-set>
 </changelog>
