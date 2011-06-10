@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usepackage[normalem]{ulem}
+\usepackage{attrib}
 
 \begin{document}
 
@@ -29,12 +30,18 @@
   \end{center}
 \end{frame}
 
+\begin{frame}{What is Burrow?}
+  \begin{quote}
+    "Burrow is a message queue that can be used in a variety of environments, from simple in-process queues to multi-tenant cloud services. The design is extremely modular and can be configured or extended to accommodate many use cases."
+  \end{quote}\attrib{burrow.openstack.org}
+\end{frame}
+
 \begin{frame}{Assumptions}
 
   \begin{itemize}
   \item The code will be maintained by the OpenStack community
   \item The code will continue to reside on Github, or possibly be moved to launchpad
-  \item Documentation will be hosted on burrow.openstack.org
+  \item Documentation will be pushed to Burrow's launchpad \texttt{bzr} repo, and hosted on burrow.openstack.org
   \item Authentication is outside the scope of this project
   \end{itemize}
 
@@ -60,11 +67,11 @@
   \begin{enumerate}
   \item \sout{Meet with Eric Day to discuss project details}
   \item \sout{Decide on target languages}
-  \item \sout{Create skeleton projects} and integrate them with burrow continuous integration infrastructure
+  \item \sout{Create skeleton projects and set up burrow continuous integration infrastructure}
+  \item Research asynchronous I/O
   \item Create blocking memory backends
   \item Research and choose JSON and HTTP libraries
-  \item Create blocking memory backend 
-  \item Research asynchronous I/O
+  \item Create blocking http backend 
   \item \sout{Choose language appropriate callback mechanisms}
   \item Write asynchronous memory backend
   \item Write asynchronous http backend
@@ -85,17 +92,37 @@
   \includegraphics[width=0.95\linewidth]{Java-Gantt-P2.pdf}
 \end{frame}
 
-\begin{frame}{Calendar}
-  \begin{center}
-    \begin{tabular}{|c|c|}
+\begin{frame}{C Milestones}
+  \begin{center}{\small
+    \begin{tabular}{| c | p{10cm} |}
       \hline
       \emph{Week of} & \emph{Deliverable}\\ \hline \hline
-      Jun 05 & Project Plan, Architecture Overview\\ \hline
-      Jun 12 & \\ \hline
-      Jun 19 & \\ \hline
+      Jun 05 & Pert Chart, Architecture Overview, Use of Jenkins CI \\ \hline
+      Jun 12 & Arch Discussed/Approved w/ Sponsor, Support Libs, Docs, Source Style chosen\\ \hline
+      Jun 19 & -\\ \hline
+      Jun 26 & Simplified Async HTTP and  Memory Backend implemented; Architecture largely documented\\ \hline
+      Jul 03 & HTTP \& Memory Component Implementation, First Long-Term Unit Tests\\ \hline
+      Jul 10 & Development \& Testing Continues -- First True Functional Tests / Demo Programs\\ \hline
+      Jul 17 & Feature Complete w/ Bugs \& Testing Gaps, Docbook Begins\\ \hline
+      Jul 24 & .. slack ..\\ \hline
+      Jul 31 & Feature Complete w/ 70\% test coverage, finalization: Project Closing \& Deliverables\\\hline
+      Aug 08 & Final Presentation\\ \hline
+    \end{tabular}
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}{Java Milestones}
+  \begin{center}
+    \begin{tabular}{| c | l |}
+      \hline
+      \emph{Week of} & \emph{Deliverable}\\ \hline \hline
+      Jun 05 & Pert Chart, Architecture Overview, Use of Jenkins CI \\ \hline
+      Jun 12 & -\\ \hline
+      Jun 19 & -\\ \hline
       Jun 26 & Blocking Memory Backend\\ \hline
       Jul 03 & Blocking HTTP Backend\\ \hline
-      Jul 10 & \\ \hline
+      Jul 10 & -\\ \hline
       Jul 17 & Async Memory Backend\\ \hline
       Jul 24 & Async HTTP Backend\\ \hline
       Jul 31 & Narrative Documentation, Sponsor Delivery\\\hline
@@ -112,34 +139,17 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Resource Identification - Time}
+\begin{frame}{Resource Identification}
   \begin{center}
     \begin{tabular}{|c|c|}
       \hline
       \emph{Name} & \emph{Available Hours/Week}\\ \hline \hline
       Justin & 8-10\\ \hline
       Adrian & 8-10\\ \hline
-      Tony & 8-10\\ \hline
+      Tony & 10+\\ \hline
       Erik & 10-15\\ \hline
       Federico & 10+\\ \hline
       Cory & 10-15 \\
-      \hline
-    \end{tabular}
-  \end{center}
-\end{frame}
-
-\begin{frame}{Resource Identification - Expertise}
-  \begin{center}
-    \begin{tabular}{|r|l|}
-      \hline
-      \emph{Name} & \emph{Expertise}\\ \hline \hline
-      Justin & -\\ \hline
-      Adrian & -\\ \hline
-      Tony & REST \\ \hline
-      Erik & REST \\ \hline
-      Federico & -\\ \hline
-      Cory & Parallel architecture, Basic Git \\ \hline
-      Eric & Async I/O in C, Burrow\\
       \hline
     \end{tabular}
   \end{center}
@@ -150,7 +160,7 @@
   \item Github will be used for source control
   \item Ticketing and bug reporting will be through Github's builtin utilities
   \item Should it become necessary, language leads will be in charge of resolving merge conflicts
-  \item Unit testing and commit screening will be will be through the Jenkins continuous integration framework.
+  \item Unit testing and code coverage reports will be through the Jenkins continuous integration framework.
   \end{itemize}
 \end{frame}
 
@@ -181,13 +191,15 @@
   \begin{itemize}
   \item Risk: Team member drops out\\
     Consequence: Fewer man-hours available\\
-    Mitigation: Scheduling as if we have less time\\
-  \item Risk: Architect drops out
+    Mitigation: Scheduling a week of slack time
+  \item Risk: Architect drops out\\
     Consequence: Possible loss of grand plan\\
     Mitigation: Documentation, regular meetings to keep team members in the loop
-  \item Risk: API Change mid-project\\
-    Consequence: Project may need re-architecting\\
-    Mitigation: Modular design
+  \item Risk: Sponsor pulls out/disappears\\
+    Consequence: Main link to Burrow project severed, loss of technical guidance\\
+    Mitigation: Forming a relationship with other members of the OpenStack community working on Burrow
+    
+
   \end{itemize}
 \end{frame}
 
@@ -197,7 +209,7 @@
   \item Functional testing will take place in the weeks leading up to code freeze.
   \item Deployment will consist of linking to our existing Github repositories (or possibly official forks)
     from burrow.openstack.org.
-  \item Documentation will be pulled from Github by our sponsor for inclusion in the Burrow wiki.
+  \item Documentation will be pushed to the Burrow \texttt{bzr} for inclusion in the Burrow wiki.
   \end{itemize}
 \end{frame}
 
