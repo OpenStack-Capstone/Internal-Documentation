@@ -1,0 +1,35 @@
+# Get versions
+curl -X GET http://localhost:8080/
+                                               
+# Get accounts                                 
+curl -X GET http://localhost:8080/v1.0
+                                               
+# Get queues                                   
+curl -X GET http://localhost:8080/v1.0/acct
+                                               
+# Get messages                                 
+curl -X GET http://localhost:8080/v1.0/acct/queue
+                                               
+# Get message                                  
+curl -X GET http://localhost:8080/v1.0/acct/queue/messageid
+
+# Insert a message
+curl -X PUT -H 'Content-Type: text/plain' -d 'message body' 'http://localhost:8080/v1.0/acct/queue/messageid?attr=value&attr2=val2'
+
+# Update a message's attributes ONLY
+curl -X POST 'http://localhost:8080/v1.0/acct/queue/messageid?attribute=value&attr2=val2'
+
+# Update a all messages in a given queue
+curl -X POST 'http://localhost:8080/v1.0/acct/queue?filter=value&attr=value'
+
+# Delete all accounts, queues and messages
+curl -X DELETE 'http://localhost:8080/v1.0'
+
+# Delete all queues from a given account
+curl -X DELETE 'http://localhost:8080/v1.0/acct'
+
+# Delete filtered messages from a given account
+curl -X DELETE 'http://localhost:8080/v1.0/acct/queue?filter=value'
+
+# Delete a specific message
+curl -X DELETE 'http://localhost:8080/v1.0/acct/queue/messageid'
