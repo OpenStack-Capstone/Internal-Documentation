@@ -1,0 +1,130 @@
+===============================================================================
+
+libburrow Backend Contract Overview
+
+===============================================================================
+
+A backend must provide functions with the following signatures. Instead
+of being exposed through a .h file, they will be exposed through an exported
+struct (see backends/dummy/dummy.h and backends/dummy/dummy.c).
+
+Functions:
+
+void *create(void *ptr, burrow_st *burrow)
+
+	Semantics:
+	Initializes the backend object at location provided via ptr.
+
+	If ptr is NULL, space malloced by calling burrow->malloc_fn(burrow, size).
+	Otherwise, it should be assumed that ptr has been allocated with enough siz
+	(as returned by size(), later) to support whatever struct the backend requires. 
+
+	Returns the address where the backend structure has been initialized, or NULL
+	on error.
+	
+	Note: At the very least, your backend structure should contain a pointer back
+	to the burrow object passed in as a parameter to this function. A flag that
+	indicates whether the backend structure was malloc'd within this function
+	is also strongly recommended; see free.
+
+void free(void *ptr)
+
+	Semantics:
+	Frees all memory associated with the memory backend, including the backend
+	itself if it was malloc'd in create(), above.
+	
+	Note: Should utilize burrow->free_fn(), where burrow was provided in the
+	original call to create.
+	
+size_t size()
+
+	Semantics:
+	Returns the base size of the backend structure.
+
+void *clone(void *dst, void *src)
+	
+	Semantics: Clones this backend, resetting all state. Mainly used as a
+	stamping function -- create one backend, clone it many times with the
+	same settings remaining applied.
+	
+void set_option(void *backend, const char *key, const char *value)
+
+  Semantics: Used to set a backend string option. The provided parameters,
+  key and value, are not assumed to remain in existence outside of this
+  function's scope.
+
+void set_option_int(void *backend, const char *key, int32_t value)
+
+	Semantics: Currently not implemented, might be in the future dependent
+	upon need.
+
+void cancel(void *backend)
+
+	Semantics: Cancels the currently executed command, if any. Exact semantics
+	are subject to change at the moment. May be called in the event of a
+	connection timeout -- or this may become an event_raised flag. TBD.
+	
+burrow_result_t event_raised(void *backend, int fd, burrow_ioevent_t events)
+
+	Semantics:
+	Called when a watched event has been raised on a file descriptor that was
+	previously watched with a call to burrow->watch_fd_fn.
+	
+	Note: Processing of the event (reading/writing IO) should not occur here.
+	It should occur when process is called subsequently.
+	
+	Returns:
+	BURROW_OK if the backend is ready to resume processing.
+	BURROW_OK_WAITING if the backend is still waiting for more events to occur
+	  before it is able to continue processing.
+	
+burrow_result_t get_accounts(void *backend, const burrow_filters_st *filters)
+	... (etc)
+
+	Semantics -- as applied to all of the "command functions":
+	Attempts to execute the named command. All parameters passed into a command
+	function can be assumed to exist and CONTINUE existing until the chain of
+	command -> process -> process -> etc finally returns BURROW_OK, indicating
+	that the command has completed processing.
+	
+	Some notes on parameters:
+	
+	In general, all parameters except filters can be assumed to exist. The
+	only exception is that create_message may have NULL attributes passed
+	to it, indicating that default values are acceptable.
+	
+	Some notes on callbacks:
+	
+	Some of these commands must return data to the user. This is performed
+	through the callback functions, such as:
+		burrow->message_fn()
+		burrow->queues_fn()       See the typedefs in constants.h for signatures
+		burrow->accounts_fn()
+
+	See the dummy backend for an example of this.
+	
+	Some notes on event waiting:
+	
+	If this function would block, it must instead call burrow->watch_fd_fn()
+	at least once, and then return BURROW_OK_WAITING. The backend will be
+	notified via event_raised (above) of any new events, and subsequently
+	the backend's process function will be called to continue command
+	processing.
+
+	Returns:
+	BURROW_OK if the command completed processing from this single invocation.
+	BURROW_OK_WAITING if the command would block; see notes for process().
+
+burrow_result_t process(void *backend)
+
+	Semantics:
+	Continues processing a command that was started by a call to one of the
+	burrow "command functions", e.g. get_message, delete_accounts, etc. It is
+	up to the backend to maintain state and remember which command and at what
+	stage it was executing when it last yielded flow.
+
+	Returns:
+	BURROW_OK if the command completed processing.
+	BURROW_OK_WAITING if the processing would block -- note that this should
+	  be accompanied with one or more calls burrow->watch_fd_fn, otherwise
+	  the frontend will never wake up the backend.
