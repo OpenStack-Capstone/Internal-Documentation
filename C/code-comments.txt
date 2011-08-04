@@ -1,0 +1,157 @@
+* Headers and licenses
+  * Please make sure that the apache license (now updated in frontend code)
+    is present at the top of your files. Feel free to change the copyright
+    to your name.
+  * Ensure that backend files have a @file/@brief preamble. See frontend
+    code for examples.
+
+* Comments
+  * Doxygen: Add a short doxygen-style comment a the top of all
+    functions. This includes internal functions for developer support.
+    This can be as simple as a one-line description for small/obvious
+    functions, or as complex as the full @param @return etc.
+    
+    For now: Put in a "See backend documentation." before all frontend-facing
+    functions (get_message, set_option, etc). This will be replaced later
+    once I figure out how to properly link together doxygen comments.
+    
+  * Ensure that comments do not cross the 80 column boundary. Split comment
+    lines if necessary. See code comments, below.
+
+* Make sure that burrow_log_xxx() is being used in place of printf/sprintf
+  in every location.
+
+* At eday's request burrow_result_t was removed. I have fixed up the code
+  to be relatively consistent with this idea. Now the frontend will expect
+  0 for OK, EAGAIN for would-block, and any other errno indicating an
+  error state. These will be passed back to the user. This should require
+  no work from anyone, but please be aware that this change has occurred.
+
+* The clone functions will be removed. Feel free to remove them both from
+  your function table and if they're stubbed out.
+
+* Filters/attributes have slightly different semantics. backends can
+  directly poll the ->set field, but be aware that char*s (which have
+  the overloaded NULL to represent unset) are no longer present in the
+  ->set field. I have made modifications where required, this is an FYI.
+  
+* Code formatting: A few things:
+  * We should try to maintain the 80 column limit as much as makes sense.
+    Obviously, sometimes there is no benefit to hard-wrapping a line, but
+    this is something eday said he'd like as a rule. Looking through libdrizzle,
+    he follows it religiously. We should at least be somewhat zealous about it.
+
+  * All of our code needs to be (at least somewhat) consistent. We're using
+    libdrizzle as a model, and code in our project should look like it could
+    fit into that project. Things to look out for:
+      -- Braces should always begin on their own lines
+
+      -- Ambiguous else conditions should always be resolved with braces.
+         Err on the side of stupidly-obvious bracing.
+
+      -- Braces around any multi-line block, including nested ifs, i.e.,
+      
+          if (condition)
+            if (condition2) {
+              do stuff;
+              ...
+            } else
+              do more stuff;
+          else
+            do more more stuff;
+        
+          Is wrong. Should be:
+
+          if (condition)
+          {
+            if (condition2)
+            {
+              do stuff;
+              ...
+            }
+            else
+              do more stuff;
+          }
+          else
+            do more more stuff;
+      
+          But the following is fine:
+      
+          if (condition)
+            if (condition2)
+              do stuff;
+            
+      -- Return types and other specifiers (e.g. static) should be present
+         on the same line as the function name and first parameter. Further
+         parameters can be hard-wrapped and indented to avoid an 80-column
+         overflow. Ex:
+         
+         static int get_messages(burrow_d *burrow,
+                                 burrow_command_st *cmd)
+         {
+            code;
+         }
+         
+      -- Switches like so:
+
+          switch (condition)
+          {
+          case 1:
+            code;
+            break;
+          case 2:
+          case 3:
+            code;
+            /* FALLTHROUGH */
+          case 4:
+            code;
+            break;
+          default:
+            code;
+            break;
+          }
+         
+         Main points are: Cases on same indentation level as switch, with code
+         and break statements indented. If a fallthrough occurs, please heavily
+         emphasize the case (such as the above comment). And, all switches
+         should have a default handler, even if it should never be reached.
+
+      -- Spaces should be used instead of tabs in all places.
+
+      -- The only thing I think we shouldn't enforce from libdrizzle is eday's
+         assignment style: var= value; We all seem to agree on var = value;,
+         so let's keep that.
+
+Adrian, these were specific comments, which I'm sure you got down at the meeting,
+but I'm reproducing them here for completeness:
+
+* Printfs, sprintfs, etc, gotta go.
+* Figure out what's up with CURL memory leaks.
+* No more strdup, and use sprintf return value in lieu of strlen.
+
+
+Fede, these were specific comments in regards to the memory backend:
+
+* Need to find a better way to handle the include dictionary.c situation. A
+  few options: Go ahead and make those non-static but namespace them, e.g.,
+  dict_get(), etc. Do, however, make sure that they are declared BURROW_LOCAL.
+  See internal.h for an example of that. Then we can do an appropriate
+  dictionary.h/dictionary.c split.
+  
+* We're running into time_t vs uint32_t etc errors on 32 bit machines and 
+  other (more strict) platforms in general. We should store internal deadlines
+  as time_t if we aren't already, and only use the uint32_ts only as an
+  offset type. Testing should occur on capstonedd, but we'll also have
+  Adrian build it, because he's running 32bit ubuntu.
+  
+* Eday said that running a make check-valgrind was catching memory
+  leaks on his machine. Please take a look and track down any memory
+  leaks you see.
+
+* I noticed that you were returning BURROW_ERROR_INTERNAL on get_message
+  and update_message, seemingly if the message wasn't changed. I kept the same
+  semantic functionality when we dropped burrow_result_t (changed it to
+  EINVAL), but please verify this is the correct behavior? I may not understand
+  dictionary behavior appropriately, but an unfound message isn't an error, it
+  just doesn't call the callback.
+
